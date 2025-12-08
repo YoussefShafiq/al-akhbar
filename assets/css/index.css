@@ -33,6 +33,8 @@ body {
     -webkit-line-clamp: 3;
 }
 
-.container {
-    padding-inline: 70px !important;
+@media (width>1024) {
+    .container {
+        padding-inline: 70px !important;
+    }
 }

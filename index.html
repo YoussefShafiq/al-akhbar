@@ -193,7 +193,8 @@
 
     <!-- desktop ad -->
     <div class="hidden lg:flex m-auto w-[800px] h-[100px] bg-primary-500 justify-center items-center">
-        <span class="text-white font-bold text-2xl">اعلن هنا</span>
+        <img src="https://www.autorepublic.ca/wp-content/uploads/2022/03/banner-4.jpg"
+            class="w-full h-full object-cover" alt="">
     </div>
 
     <section class="container mx-auto px-4 py-8">
@@ -346,7 +347,7 @@
             </div>
 
             <!-- Editor's Pick -->
-            <div class="lg:col-span-2 bg-white h-fit">
+            <div class="lg:col-span-2 h-fit">
                 <div class="flex items-center gap-2 mb-6">
                     <svg class="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                         <path
@@ -355,7 +356,7 @@
                     <h2 class="text-red-600 font-extrabold text-xl"> اختيارات المحرر</h2>
                 </div>
 
-                <div class="space-y-6">
+                <div class="space-y-6 p-3 bg-white">
                     <article class="border-b border-gray-200 pb-6">
                         <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
                             إليك أرخص 4 سيارات كهربائية يمكنك شراؤها
@@ -404,322 +405,369 @@
 
     <!-- desktop ad -->
     <div class="hidden lg:flex m-auto w-[800px] h-[100px] bg-primary-500 justify-center items-center">
-        <span class="text-white font-bold text-2xl">اعلن هنا</span>
+        <img src="https://www.autorepublic.ca/wp-content/uploads/2022/03/banner-4.jpg"
+            class="w-full h-full object-cover" alt="">
     </div>
 
     <section class="container mx-auto px-4 py-8 space-y-6">
-        <header class="border-b-4 border-black pb-3 mb-5 flex items-center gap-4">
-            <div class="w-5 aspect-square bg-primary-500"></div>
-            <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+        <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-5 aspect-square bg-primary-500"></div>
+                <h2 class="text-primary-500 font-bold text-3xl">الأخبار العاجلة</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-semibold text-lg transition-colors">
+                    عرض الكل <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
         </header>
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- BIG LEFT CARD -->
             <article class="relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
-                <img src="./assets/images/politics.jpg" alt=""
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
-
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-
-                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
-                        أخبار بريطانيا
-                    </span>
-
-                    <h1 class="text-4xl font-bold mb-4 leading-tight">
-                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
-                    </h1>
-
-                    <p class="text-gray-200 mb-4 text-lg">
-                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
-                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
-                    </p>
-
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                            ر.س
-                        </div>
-                        <div>
-                            <p class="font-semibold">ريان سيلرز</p>
-                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="relative h-full group cursor-pointer overflow-hidden  min-h-[500px]">
-                <img src="./assets/images/politics.jpg" alt=""
+                <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1200&q=60"
                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
                 <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
                     <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
-                        أخبار بريطانيا
+                        أخبار العالم
                     </span>
 
                     <h1 class="text-4xl font-bold mb-4 leading-tight">
-                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
+                        الأمم المتحدة تعلن خطة جديدة لمعالجة تغيّر المناخ بحلول عام 2030
                     </h1>
 
                     <p class="text-gray-200 mb-4 text-lg">
-                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
-                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
+                        الخطة تتضمن تعاوناً دولياً واسعاً لتقليل الانبعاثات وتوسيع مصادر الطاقة المتجددة.
                     </p>
 
                     <div class="flex items-center gap-3">
                         <div
                             class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                            ر.س
+                            م.ك
                         </div>
                         <div>
-                            <p class="font-semibold">ريان سيلرز</p>
-                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
+                            <p class="font-semibold">محمد كريم</p>
+                            <p class="text-sm text-gray-300">12 ديسمبر 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- BIG RIGHT CARD -->
+            <article class="relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
+                <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=60"
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                        اقتصاد
+                    </span>
+
+                    <h1 class="text-4xl font-bold mb-4 leading-tight">
+                        الأسواق العالمية تشهد ارتفاعاً قياسياً في أسعار الذهب
+                    </h1>
+
+                    <p class="text-gray-200 mb-4 text-lg">
+                        المستثمرون يتجهون إلى المعادن الثمينة كملاذ آمن وسط التوترات السياسية.
+                    </p>
+
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
+                            س.ع
+                        </div>
+                        <div>
+                            <p class="font-semibold">سارة علاء</p>
+                            <p class="text-sm text-gray-300">9 ديسمبر 2024</p>
                         </div>
                     </div>
                 </div>
             </article>
         </div>
+
+        <!-- SMALL GRID NEWS -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1 -->
             <article class="border-b border-gray-200 pb-6">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                    <img src="https://images.unsplash.com/photo-1599158150601-1417ebbaafdd?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         class="w-full h-80 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
+                    <div class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                        الرياضة
                     </div>
                 </div>
 
                 <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                    المنتخب الوطني يحقق فوزاً مهماً في التصفيات المؤهلة لكأس العالم 2026
                 </h3>
+
                 <div class="flex items-center gap-3">
                     <div
                         class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
+                        أ.م
                     </div>
                     <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                        <p class="font-semibold">أدهم منصور</p>
+                        <p class="text-sm text-gray-500">3 ديسمبر 2024</p>
                     </div>
                 </div>
             </article>
+
+            <!-- Card 2 -->
             <article class="border-b border-gray-200 pb-6">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                    <img src="https://images.unsplash.com/photo-1523655223303-4e9ef5234587?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         class="w-full h-80 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
+                    <div class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                        تكنولوجيا
                     </div>
                 </div>
 
                 <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                    شركة تقنية تعلن عن أسرع معالج للهواتف الذكية في تاريخها
                 </h3>
+
                 <div class="flex items-center gap-3">
                     <div
                         class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
+                        ن.ف
                     </div>
                     <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                        <p class="font-semibold">نهى فريد</p>
+                        <p class="text-sm text-gray-500">10 ديسمبر 2024</p>
                     </div>
                 </div>
             </article>
+
+            <!-- Card 3 -->
             <article class="border-b border-gray-200 pb-6">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=60"
                         class="w-full h-80 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
+                    <div class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                        منوعات
                     </div>
                 </div>
 
                 <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                    اكتشاف موقع أثري جديد يعود إلى العصر الفرعوني في صعيد مصر
                 </h3>
+
                 <div class="flex items-center gap-3">
                     <div
                         class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
+                        ك.س
                     </div>
                     <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                        <p class="font-semibold">كريم سعد</p>
+                        <p class="text-sm text-gray-500">5 ديسمبر 2024</p>
                     </div>
                 </div>
             </article>
+
+            <!-- Card 4 -->
             <article class="border-b border-gray-200 pb-6">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=60"
                         class="w-full h-80 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
+                    <div class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1">
+                        الصحة
                     </div>
                 </div>
 
                 <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                    دراسة جديدة تكشف عوامل مؤثرة على جودة النوم لدى البالغين
                 </h3>
+
                 <div class="flex items-center gap-3">
                     <div
                         class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
+                        ل.ج
                     </div>
                     <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                        <p class="font-semibold">ليلى جاد</p>
+                        <p class="text-sm text-gray-500">7 ديسمبر 2024</p>
                     </div>
                 </div>
             </article>
+
         </div>
     </section>
 
+
     <section class="container mx-auto px-4 py-8 space-y-6">
-        <header class="border-b-4 border-black pb-3 mb-5 flex items-center gap-4">
-            <div class="w-5 aspect-square bg-primary-500"></div>
-            <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+        <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-5 aspect-square bg-primary-500"></div>
+                <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-semibold text-lg transition-colors">
+                    عرض الكل <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
         </header>
+
+        <!-- TOP GRID -->
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <!-- MAIN BIG NEWS -->
             <article
-                class="lg:col-span-2 relative h-full group cursor-pointer overflow-hidden min-h-[500px] lg:min-h-0">
-                <img src="./assets/images/politics.jpg" alt=""
+                class="lg:col-span-2 relative h-full group cursor-pointer overflow-hidden min-h-[500px] lg:h-[450px] lg:min-h-0">
+                <img src="https://images.unsplash.com/photo-1709536240391-fa5b06a756d3?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px] lg:min-h-0">
 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
-                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
                     <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
-                        أخبار بريطانيا
+                        الشرق الأوسط
                     </span>
 
                     <h1 class="text-4xl font-bold mb-4 leading-tight">
-                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
+                        ارتفاع أسعار النفط عالميًا بعد تقارير عن خفض الإنتاج في الخليج
                     </h1>
 
                     <p class="text-gray-200 mb-4 text-lg">
-                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
-                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
+                        أسواق الطاقة تشهد حالة من التوتر بعد إعلان خفض الإنتاج، وسط توقعات بارتفاع إضافي في الأيام
+                        المقبلة.
                     </p>
 
                     <div class="flex items-center gap-3">
                         <div
                             class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                            ر.س
+                            م.ع
                         </div>
                         <div>
-                            <p class="font-semibold">ريان سيلرز</p>
-                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
+                            <p class="font-semibold">محمد علي</p>
+                            <p class="text-sm text-gray-300">10 ديسمبر 2025</p>
                         </div>
                     </div>
                 </div>
             </article>
+
+            <!-- SMALL NEWS 1 -->
             <article class="pb-6">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=400&h=250&fit=crop" alt=""
                         class="w-full h-72 object-cover mb-3">
                     <div
                         class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
+                        اقتصاد
                     </div>
                 </div>
 
                 <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                    البورصة الأوروبية ترتفع بعد إعلان خطط تحفيز جديدة
                 </h3>
+
                 <div class="flex items-center gap-3">
                     <div
                         class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
+                        ل.س
                     </div>
                     <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                        <p class="font-semibold">ليلى سعيد</p>
+                        <p class="text-sm text-gray-500">9 ديسمبر 2025</p>
                     </div>
                 </div>
             </article>
+
+            <!-- SMALL NEWS 2 -->
             <article class="pb-6">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                    <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=400&h=250&fit=crop" alt=""
                         class="w-full h-72 object-cover mb-3">
                     <div
                         class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
+                        منوعات
                     </div>
                 </div>
 
                 <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                    إطلاق هاتف جديد بميزات غير مسبوقة يثير ضجة على السوشيال ميديا
                 </h3>
+
                 <div class="flex items-center gap-3">
                     <div
                         class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
+                        أ.ن
                     </div>
                     <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                        <p class="font-semibold">أحمد نادر</p>
+                        <p class="text-sm text-gray-500">8 ديسمبر 2025</p>
                     </div>
                 </div>
             </article>
         </div>
+
+        <!-- BOTTOM GRID -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 border-t pt-6">
             <article class="p-4 border-e">
-                <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> سياسه
-                </span>
-                <h3 class="font-bold text-lg  hover:text-red-600 cursor-pointer">
-                    الولايات تستعد لاحتجاجات بسبب قواعد كورونا الجديدة
+                <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> سياسة </span>
+                <h3 class="font-bold text-lg hover:text-red-600 cursor-pointer">
+                    الحكومة تعلن تعديلات جديدة على قانون الانتخابات
                 </h3>
                 <p class="text-sm text-black/80 mb-2">
-                    السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان، وتشخيصها بشكل غير صحيح وتطبيق العلاجات
-                    الخاطئة.
+                    التعديلات تهدف لزيادة المشاركة وضمان الشفافية في العملية الانتخابية.
                 </p>
                 <div class="flex items-center gap-2 text-sm text-gray-600">
-                    <span class="text-red-600">أخبار بريطانيا</span>
-                    <span>29 أغسطس 2021</span>
+                    <span class="text-red-600">الشرق الأوسط</span>
+                    <span>6 ديسمبر 2025</span>
                 </div>
             </article>
+
             <article class="p-4 border-e">
-                <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> سياسه
-                </span>
-                <h3 class="font-bold text-lg  hover:text-red-600 cursor-pointer">
-                    الولايات تستعد لاحتجاجات بسبب قواعد كورونا الجديدة
+                <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> اقتصاد </span>
+                <h3 class="font-bold text-lg hover:text-red-600 cursor-pointer">
+                    ارتفاع غير مسبوق في أسعار الذهب خلال التعاملات الصباحية
                 </h3>
                 <p class="text-sm text-black/80 mb-2">
-                    السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان، وتشخيصها بشكل غير صحيح وتطبيق العلاجات
-                    الخاطئة.
+                    خبراء يتوقعون استمرار صعود الذهب بسبب التوترات الجيوسياسية.
                 </p>
                 <div class="flex items-center gap-2 text-sm text-gray-600">
-                    <span class="text-red-600">أخبار بريطانيا</span>
-                    <span>29 أغسطس 2021</span>
+                    <span class="text-red-600">عالمي</span>
+                    <span>5 ديسمبر 2025</span>
                 </div>
             </article>
+
             <article class="p-4">
-                <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> سياسه
-                </span>
-                <h3 class="font-bold text-lg  hover:text-red-600 cursor-pointer">
-                    الولايات تستعد لاحتجاجات بسبب قواعد كورونا الجديدة
+                <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> علوم </span>
+                <h3 class="font-bold text-lg hover:text-red-600 cursor-pointer">
+                    اكتشاف كوكب جديد قابل للحياة على بعد 40 سنة ضوئية
                 </h3>
                 <p class="text-sm text-black/80 mb-2">
-                    السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان، وتشخيصها بشكل غير صحيح وتطبيق العلاجات
-                    الخاطئة.
+                    العلماء يقولون إن الظروف على الكوكب الجديد "مشابهة للأرض بشكل كبير".
                 </p>
                 <div class="flex items-center gap-2 text-sm text-gray-600">
-                    <span class="text-red-600">أخبار بريطانيا</span>
-                    <span>29 أغسطس 2021</span>
+                    <span class="text-red-600">فضاء</span>
+                    <span>3 ديسمبر 2025</span>
                 </div>
             </article>
         </div>
     </section>
 
+
+    <!-- __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ -->
+
     <section class=" px-4 py-8 space-y-6 ">
         <div class="container mx-auto">
-            <header class="border-b-4 border-black pb-3 mb-5 flex items-center gap-4">
-                <div class="w-5 aspect-square bg-primary-500"></div>
-                <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+            <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-5 aspect-square bg-primary-500"></div>
+                    <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-primary-600 hover:text-primary-800 font-semibold text-lg transition-colors">
+                        عرض الكل <i class="fas fa-arrow-left "></i>
+                    </a>
+                </div>
             </header>
 
             <div class="swiper mostReadSwiper pb-10">
@@ -727,24 +775,24 @@
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
                         <div class="relative h-96 overflow-hidden group cursor-pointer">
-                            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800"
-                                alt="Electric Car" class="w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="News"
+                                class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                             <div class="absolute top-4 left-4">
-                                <span
-                                    class="bg-primary-600 text-white text-xs font-semibold px-3 py-1 ">تكنولوجيا</span>
+                                <span class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">سياسة</span>
                             </div>
                             <div class="absolute bottom-0 left-0 right-0 p-6">
-                                <h3 class="text-white text-2xl font-bold mb-3">إليك أرخص 4 سيارات كهربائية يمكنك شراؤها
+                                <h3 class="text-white text-2xl font-bold mb-3">
+                                    الحكومة تعلن خطط تطوير جديدة للمدن الساحلية
                                 </h3>
                                 <div class="flex items-center justify-between text-gray-300 text-sm">
                                     <div class="flex items-center gap-2">
                                         <div class="w-8 h-8 bg-gray-500 rounded-full"></div>
-                                        <span>ريان سيلرز</span>
+                                        <span>أحمد شريف</span>
                                         <span>|</span>
-                                        <span>31 أغسطس 2021</span>
+                                        <span>5 ديسمبر 2024</span>
                                     </div>
-                                    <button class="text-white hover:text-gray-300">
+                                    <button class="text-white">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
@@ -758,23 +806,24 @@
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
                         <div class="relative h-96 overflow-hidden group cursor-pointer">
-                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Beach"
+                            <img src="https://images.unsplash.com/photo-1624365168056-daf44387e2ae?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                             <div class="absolute top-4 left-4">
-                                <span class="bg-primary-600 text-white text-xs font-semibold px-3 py-1 ">الهاربون</span>
+                                <span class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">اقتصاد</span>
                             </div>
                             <div class="absolute bottom-0 left-0 right-0 p-6">
-                                <h3 class="text-white text-2xl font-bold mb-3">أفضل الجزر للشواطئ، من أروبا إلى بحر
-                                    البلطيق</h3>
+                                <h3 class="text-white text-2xl font-bold mb-3">
+                                    ارتفاع أسعار الذهب عالمياً بعد تقلبات السوق
+                                </h3>
                                 <div class="flex items-center justify-between text-gray-300 text-sm">
                                     <div class="flex items-center gap-2">
                                         <div class="w-8 h-8 bg-gray-500 rounded-full"></div>
-                                        <span>ريان سيلرز</span>
+                                        <span>مها فؤاد</span>
                                         <span>|</span>
-                                        <span>18 سبتمبر 2021</span>
+                                        <span>2 ديسمبر 2024</span>
                                     </div>
-                                    <button class="text-white hover:text-gray-300">
+                                    <button class="text-white">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
@@ -788,24 +837,24 @@
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
                         <div class="relative h-96 overflow-hidden group cursor-pointer">
-                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
-                                alt="Headphones" class="w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1760655381156-7f9d62dbc275?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Technology" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                             <div class="absolute top-4 left-4">
-                                <span
-                                    class="bg-primary-600 text-white text-xs font-semibold px-3 py-1 ">تكنولوجيا</span>
+                                <span class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">تكنولوجيا</span>
                             </div>
                             <div class="absolute bottom-0 left-0 right-0 p-6">
-                                <h3 class="text-white text-2xl font-bold mb-3">سوني WF-10XM4: سماعاتنا المفضلة تمامًا
+                                <h3 class="text-white text-2xl font-bold mb-3">
+                                    إطلاق هاتف جديد بقدرات تصوير ثورية
                                 </h3>
                                 <div class="flex items-center justify-between text-gray-300 text-sm">
                                     <div class="flex items-center gap-2">
                                         <div class="w-8 h-8 bg-gray-500 rounded-full"></div>
-                                        <span>ريان سيلرز</span>
+                                        <span>سارة منصور</span>
                                         <span>|</span>
-                                        <span>20 سبتمبر 2021</span>
+                                        <span>1 ديسمبر 2024</span>
                                     </div>
-                                    <button class="text-white hover:text-gray-300">
+                                    <button class="text-white">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
@@ -819,24 +868,24 @@
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
                         <div class="relative h-96 overflow-hidden group cursor-pointer">
-                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
-                                alt="Headphones" class="w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1562493205-0c1659a3cf4c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Sports" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                             <div class="absolute top-4 left-4">
-                                <span
-                                    class="bg-primary-600 text-white text-xs font-semibold px-3 py-1 ">تكنولوجيا</span>
+                                <span class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">رياضة</span>
                             </div>
                             <div class="absolute bottom-0 left-0 right-0 p-6">
-                                <h3 class="text-white text-2xl font-bold mb-3">سوني WF-10XM4: سماعاتنا المفضلة تمامًا
+                                <h3 class="text-white text-2xl font-bold mb-3">
+                                    منتخب مصر يقترب من التأهل بعد فوز مثير
                                 </h3>
                                 <div class="flex items-center justify-between text-gray-300 text-sm">
                                     <div class="flex items-center gap-2">
                                         <div class="w-8 h-8 bg-gray-500 rounded-full"></div>
-                                        <span>ريان سيلرز</span>
+                                        <span>عمرو حسن</span>
                                         <span>|</span>
-                                        <span>20 سبتمبر 2021</span>
+                                        <span>30 نوفمبر 2024</span>
                                     </div>
-                                    <button class="text-white hover:text-gray-300">
+                                    <button class="text-white">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
@@ -850,24 +899,24 @@
                     <!-- Slide 5 -->
                     <div class="swiper-slide">
                         <div class="relative h-96 overflow-hidden group cursor-pointer">
-                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
-                                alt="Headphones" class="w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1668934804959-2cc138045bfb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Health" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                             <div class="absolute top-4 left-4">
-                                <span
-                                    class="bg-primary-600 text-white text-xs font-semibold px-3 py-1 ">تكنولوجيا</span>
+                                <span class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">صحة</span>
                             </div>
                             <div class="absolute bottom-0 left-0 right-0 p-6">
-                                <h3 class="text-white text-2xl font-bold mb-3">سوني WF-10XM4: سماعاتنا المفضلة تمامًا
+                                <h3 class="text-white text-2xl font-bold mb-3">
+                                    خبراء يحذرون من انتشار موجة جديدة من الإنفلونزا
                                 </h3>
                                 <div class="flex items-center justify-between text-gray-300 text-sm">
                                     <div class="flex items-center gap-2">
                                         <div class="w-8 h-8 bg-gray-500 rounded-full"></div>
-                                        <span>ريان سيلرز</span>
+                                        <span>ليلى خليل</span>
                                         <span>|</span>
-                                        <span>20 سبتمبر 2021</span>
+                                        <span>28 نوفمبر 2024</span>
                                     </div>
-                                    <button class="text-white hover:text-gray-300">
+                                    <button class="text-white">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
@@ -877,6 +926,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
 
@@ -899,9 +949,16 @@
     </section>
 
     <section class="container mx-auto px-4 py-8 space-y-6">
-        <header class="border-b-4 border-black pb-3 mb-5 flex items-center gap-4">
-            <div class="w-5 aspect-square bg-primary-500"></div>
-            <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+        <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-5 aspect-square bg-primary-500"></div>
+                <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-semibold text-lg transition-colors">
+                    عرض الكل <i class="fas fa-arrow-left "></i>
+                </a>
+            </div>
         </header>
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
             <article
@@ -1115,509 +1172,6 @@
         </div>
     </section>
 
-    <section class="container mx-auto px-4 py-8 space-y-6">
-        <header class="border-b-4 border-black pb-3 mb-5 flex items-center gap-4">
-            <div class="w-5 aspect-square bg-primary-500"></div>
-            <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
-        </header>
-        <div class="flex flex-col lg:flex-row gap-6">
-            <div class="lg:w-1/4 bg-primary-200 p-6">
-                <h1 class="text-5xl leading-[60px] font-bold">
-                    استكشف أحدث الأخبار والتحليلات من جميع أنحاء العالم لحظة بلحظة.
-                </h1>
-                <p class="text-xl mt-3 text-black/80">
-                    احصل على نظرة أعمق على آخر الأخبار من كل الدول والقطاعات.
-                </p>
-                <p class="text-xl mt-3 text-black/80">
-                    تصفّح أحدث المستجدات العالمية من مصدر موثوق وسهل الاستخدام.
-                </p>
-                <p class="text-xl mt-3 text-black/80">
-                    واكب الأخبار العاجلة والتحديثات المستمرة من مختلف أنحاء العالم.
-                </p>
-                <button class="border-2 border-black px-2 py-1 text-xl mt-5 hover:-translate-y-1 transition-all">read
-                    more</button>
-            </div>
-            <div class="lg:w-3/4 flex flex-col">
-                <article
-                    class="relative h-full flex flex-col lg:flex-row gap-6 cursor-pointer overflow-hidden h-[200px]">
-                    <div class="lg:w-1/2 group overflow-hidden">
-                        <img src="./assets/images/politics.jpg" alt=""
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-                    </div>
-
-                    <!-- <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div> -->
-
-                    <div div class="bottom-0 left-0 right-0 p-8 text-black">
-                        <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
-                            أخبار بريطانيا
-                        </span>
-
-                        <h1 class="text-4xl font-bold mb-4 leading-tight">
-                            خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
-                        </h1>
-
-                        <p class="text-gray-600 mb-4 text-lg">
-                            السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
-                            وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
-                        </p>
-
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                                ر.س
-                            </div>
-                            <div>
-                                <p class="font-semibold">ريان سيلرز</p>
-                                <p class="text-sm text-gray-600">28 أغسطس 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 border-t pt-6">
-                    <article class="pb-6">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
-                                alt="" class="w-full h-52 object-cover mb-3">
-                            <div
-                                class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                                أخبار بريطانيا
-                            </div>
-                        </div>
-
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                            اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                        </h3>
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                                ر.س
-                            </div>
-                            <div>
-                                <p class="font-semibold">ريان سيلرز</p>
-                                <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="pb-6">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
-                                alt="" class="w-full h-52 object-cover mb-3">
-                            <div
-                                class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                                أخبار بريطانيا
-                            </div>
-                        </div>
-
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                            اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                        </h3>
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                                ر.س
-                            </div>
-                            <div>
-                                <p class="font-semibold">ريان سيلرز</p>
-                                <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="pb-6">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
-                                alt="" class="w-full h-52 object-cover mb-3">
-                            <div
-                                class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                                أخبار بريطانيا
-                            </div>
-                        </div>
-
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                            اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                        </h3>
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                                ر.س
-                            </div>
-                            <div>
-                                <p class="font-semibold">ريان سيلرز</p>
-                                <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="pb-6">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
-                                alt="" class="w-full h-52 object-cover mb-3">
-                            <div
-                                class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                                أخبار بريطانيا
-                            </div>
-                        </div>
-
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                            اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                        </h3>
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                                ر.س
-                            </div>
-                            <div>
-                                <p class="font-semibold">ريان سيلرز</p>
-                                <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mx-auto px-4 py-8 space-y-6">
-        <header class="border-b-4 border-black pb-3 mb-5 flex items-center gap-4">
-            <div class="w-5 aspect-square bg-primary-500"></div>
-            <h2 class="text-primary-500 font-bold text-3xl">المزيد من الأخبار </h2>
-        </header>
-        <div class="flex flex-col lg:flex-row gap-6">
-            <article
-                class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
-                <img src="./assets/images/politics.jpg" alt=""
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
-
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-
-                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
-                        أخبار بريطانيا
-                    </span>
-
-                    <h1 class="text-2xl font-bold mb-4 leading-tight">
-                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
-                    </h1>
-
-                    <p class="text-gray-200 mb-4 text-base">
-                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
-                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
-                    </p>
-
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                            ر.س
-                        </div>
-                        <div>
-                            <p class="font-semibold">ريان سيلرز</p>
-                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article
-                class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
-                <img src="./assets/images/politics.jpg" alt=""
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
-
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-
-                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
-                        أخبار بريطانيا
-                    </span>
-
-                    <h1 class="text-2xl font-bold mb-4 leading-tight">
-                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
-                    </h1>
-
-                    <p class="text-gray-200 mb-4 text-base">
-                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
-                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
-                    </p>
-
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                            ر.س
-                        </div>
-                        <div>
-                            <p class="font-semibold">ريان سيلرز</p>
-                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article
-                class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
-                <img src="./assets/images/politics.jpg" alt=""
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
-
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-
-                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
-                        أخبار بريطانيا
-                    </span>
-
-                    <h1 class="text-2xl font-bold mb-4 leading-tight">
-                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
-                    </h1>
-
-                    <p class="text-gray-200 mb-4 text-base">
-                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
-                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
-                    </p>
-
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                            ر.س
-                        </div>
-                        <div>
-                            <p class="font-semibold">ريان سيلرز</p>
-                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <!-- <article
-                class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
-                <img src="./assets/images/politics.jpg" alt=""
-                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
-
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-
-                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
-                        أخبار بريطانيا
-                    </span>
-
-                    <h1 class="text-2xl font-bold mb-4 leading-tight">
-                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
-                    </h1>
-
-                    <p class="text-gray-200 mb-4 text-base">
-                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
-                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
-                    </p>
-
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                            ر.س
-                        </div>
-                        <div>
-                            <p class="font-semibold">ريان سيلرز</p>
-                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </article> -->
-
-
-        </div>
-    </section>
-
-    <section class="container mx-auto px-4 py-8 space-y-6">
-        <header class="border-b-4 border-black pb-3 mb-5 flex items-center gap-4">
-            <div class="w-5 aspect-square bg-primary-500"></div>
-            <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
-        </header>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <article class="border-b border-gray-200 pb-6">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
-                        class="w-full h-58 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
-                    </div>
-                </div>
-
-                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                </h3>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
-                    </div>
-                    <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                    </div>
-                </div>
-            </article>
-            <article class="border-b border-gray-200 pb-6">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
-                        class="w-full h-58 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
-                    </div>
-                </div>
-
-                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                </h3>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
-                    </div>
-                    <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                    </div>
-                </div>
-            </article>
-            <article class="border-b border-gray-200 pb-6">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
-                        class="w-full h-58 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
-                    </div>
-                </div>
-
-                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                </h3>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
-                    </div>
-                    <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                    </div>
-                </div>
-            </article>
-            <article class="border-b border-gray-200 pb-6">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
-                        class="w-full h-58 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
-                    </div>
-                </div>
-
-                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                </h3>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
-                    </div>
-                    <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                    </div>
-                </div>
-            </article>
-            <article class="border-b border-gray-200 pb-6">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
-                        class="w-full h-58 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
-                    </div>
-                </div>
-
-                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                </h3>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
-                    </div>
-                    <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                    </div>
-                </div>
-            </article>
-            <article class="border-b border-gray-200 pb-6">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
-                        class="w-full h-58 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
-                    </div>
-                </div>
-
-                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                </h3>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
-                    </div>
-                    <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                    </div>
-                </div>
-            </article>
-            <article class="border-b border-gray-200 pb-6">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
-                        class="w-full h-58 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
-                    </div>
-                </div>
-
-                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                </h3>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
-                    </div>
-                    <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                    </div>
-                </div>
-            </article>
-            <article class="border-b border-gray-200 pb-6">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
-                        class="w-full h-58 object-cover mb-3">
-                    <div
-                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
-                        أخبار بريطانيا
-                    </div>
-                </div>
-
-                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
-                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
-                </h3>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
-                        ر.س
-                    </div>
-                    <div>
-                        <p class="font-semibold">ريان سيلرز</p>
-                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
     <!-- Reels Section -->
     <section class="container mx-auto px-4 py-8 space-y-6">
         <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
@@ -2159,6 +1713,548 @@
             </div>
         </div>
 
+
+    </section>
+
+    <section class="container mx-auto px-4 py-8 space-y-6">
+        <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-5 aspect-square bg-primary-500"></div>
+                <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-semibold text-lg transition-colors">
+                    عرض الكل <i class="fas fa-arrow-left "></i>
+                </a>
+            </div>
+        </header>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="lg:w-1/4 bg-gray-200 p-6">
+                <h1 class="text-3xl lg:text-5xl lg:leading-[60px] font-bold">
+                    استكشف أحدث الأخبار والتحليلات من جميع أنحاء العالم لحظة بلحظة.
+                </h1>
+                <p class="lg:text-xl mt-3 text-black/80">
+                    احصل على نظرة أعمق على آخر الأخبار من كل الدول والقطاعات.
+                </p>
+                <p class="lg:text-xl mt-3 text-black/80">
+                    تصفّح أحدث المستجدات العالمية من مصدر موثوق وسهل الاستخدام.
+                </p>
+                <p class="lg:text-xl mt-3 text-black/80">
+                    واكب الأخبار العاجلة والتحديثات المستمرة من مختلف أنحاء العالم.
+                </p>
+                <button class="border-2 border-black px-2 py-1 lg:text-xl mt-5 hover:-translate-y-1 transition-all">
+                    المزيد
+                </button>
+            </div>
+            <div class="lg:w-3/4 flex flex-col">
+                <article
+                    class="relative h-full flex flex-col lg:flex-row gap-6 cursor-pointer overflow-hidden h-[200px]">
+                    <div class="lg:w-1/2 group overflow-hidden">
+                        <img src="./assets/images/politics.jpg" alt=""
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+
+                    <!-- <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div> -->
+
+                    <div div class="bottom-0 left-0 right-0 p-8 text-black">
+                        <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                            أخبار بريطانيا
+                        </span>
+
+                        <h1 class="text-4xl font-bold mb-4 leading-tight">
+                            خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
+                        </h1>
+
+                        <p class="text-gray-600 mb-4 text-lg">
+                            السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
+                            وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
+                        </p>
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
+                                ر.س
+                            </div>
+                            <div>
+                                <p class="font-semibold">ريان سيلرز</p>
+                                <p class="text-sm text-gray-600">28 أغسطس 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 border-t pt-6">
+                    <article class="pb-6">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
+                                alt="" class="w-full h-52 object-cover mb-3">
+                            <div
+                                class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                أخبار بريطانيا
+                            </div>
+                        </div>
+
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                            اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                        </h3>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                                ر.س
+                            </div>
+                            <div>
+                                <p class="font-semibold">ريان سيلرز</p>
+                                <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="pb-6">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
+                                alt="" class="w-full h-52 object-cover mb-3">
+                            <div
+                                class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                أخبار بريطانيا
+                            </div>
+                        </div>
+
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                            اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                        </h3>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                                ر.س
+                            </div>
+                            <div>
+                                <p class="font-semibold">ريان سيلرز</p>
+                                <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="pb-6">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
+                                alt="" class="w-full h-52 object-cover mb-3">
+                            <div
+                                class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                أخبار بريطانيا
+                            </div>
+                        </div>
+
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                            اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                        </h3>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                                ر.س
+                            </div>
+                            <div>
+                                <p class="font-semibold">ريان سيلرز</p>
+                                <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="pb-6">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
+                                alt="" class="w-full h-52 object-cover mb-3">
+                            <div
+                                class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                أخبار بريطانيا
+                            </div>
+                        </div>
+
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                            اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                        </h3>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                                ر.س
+                            </div>
+                            <div>
+                                <p class="font-semibold">ريان سيلرز</p>
+                                <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-8 space-y-6">
+        <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-5 aspect-square bg-primary-500"></div>
+                <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-semibold text-lg transition-colors">
+                    عرض الكل <i class="fas fa-arrow-left "></i>
+                </a>
+            </div>
+        </header>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <article
+                class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
+                <img src="./assets/images/politics.jpg" alt=""
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                        أخبار بريطانيا
+                    </span>
+
+                    <h1 class="text-2xl font-bold mb-4 leading-tight">
+                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
+                    </h1>
+
+                    <p class="text-gray-200 mb-4 text-base">
+                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
+                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
+                    </p>
+
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
+                            ر.س
+                        </div>
+                        <div>
+                            <p class="font-semibold">ريان سيلرز</p>
+                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
+                <img src="./assets/images/politics.jpg" alt=""
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                        أخبار بريطانيا
+                    </span>
+
+                    <h1 class="text-2xl font-bold mb-4 leading-tight">
+                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
+                    </h1>
+
+                    <p class="text-gray-200 mb-4 text-base">
+                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
+                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
+                    </p>
+
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
+                            ر.س
+                        </div>
+                        <div>
+                            <p class="font-semibold">ريان سيلرز</p>
+                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
+                <img src="./assets/images/politics.jpg" alt=""
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                        أخبار بريطانيا
+                    </span>
+
+                    <h1 class="text-2xl font-bold mb-4 leading-tight">
+                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
+                    </h1>
+
+                    <p class="text-gray-200 mb-4 text-base">
+                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
+                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
+                    </p>
+
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
+                            ر.س
+                        </div>
+                        <div>
+                            <p class="font-semibold">ريان سيلرز</p>
+                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- <article
+                class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
+                <img src="./assets/images/politics.jpg" alt=""
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                <div div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                        أخبار بريطانيا
+                    </span>
+
+                    <h1 class="text-2xl font-bold mb-4 leading-tight">
+                        خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
+                    </h1>
+
+                    <p class="text-gray-200 mb-4 text-base">
+                        السياسة هي فن البحث عن المشاكل، والعثور عليها في كل مكان،
+                        وتشخيصها بشكل غير صحيح وتطبيق العلاجات الخاطئة.
+                    </p>
+
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
+                            ر.س
+                        </div>
+                        <div>
+                            <p class="font-semibold">ريان سيلرز</p>
+                            <p class="text-sm text-gray-300">28 أغسطس 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </article> -->
+
+
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-8 space-y-6">
+        <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-5 aspect-square bg-primary-500"></div>
+                <h2 class="text-primary-500 font-bold text-3xl">آخر الأخبار</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-semibold text-lg transition-colors">
+                    عرض الكل <i class="fas fa-arrow-left "></i>
+                </a>
+            </div>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="border-b border-gray-200 pb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                        class="w-full h-58 object-cover mb-3">
+                    <div
+                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                        أخبار بريطانيا
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                        ر.س
+                    </div>
+                    <div>
+                        <p class="font-semibold">ريان سيلرز</p>
+                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                    </div>
+                </div>
+            </article>
+            <article class="border-b border-gray-200 pb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                        class="w-full h-58 object-cover mb-3">
+                    <div
+                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                        أخبار بريطانيا
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                        ر.س
+                    </div>
+                    <div>
+                        <p class="font-semibold">ريان سيلرز</p>
+                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                    </div>
+                </div>
+            </article>
+            <article class="border-b border-gray-200 pb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                        class="w-full h-58 object-cover mb-3">
+                    <div
+                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                        أخبار بريطانيا
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                        ر.س
+                    </div>
+                    <div>
+                        <p class="font-semibold">ريان سيلرز</p>
+                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                    </div>
+                </div>
+            </article>
+            <article class="border-b border-gray-200 pb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                        class="w-full h-58 object-cover mb-3">
+                    <div
+                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                        أخبار بريطانيا
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                        ر.س
+                    </div>
+                    <div>
+                        <p class="font-semibold">ريان سيلرز</p>
+                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                    </div>
+                </div>
+            </article>
+            <article class="border-b border-gray-200 pb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                        class="w-full h-58 object-cover mb-3">
+                    <div
+                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                        أخبار بريطانيا
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                        ر.س
+                    </div>
+                    <div>
+                        <p class="font-semibold">ريان سيلرز</p>
+                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                    </div>
+                </div>
+            </article>
+            <article class="border-b border-gray-200 pb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                        class="w-full h-58 object-cover mb-3">
+                    <div
+                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                        أخبار بريطانيا
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                        ر.س
+                    </div>
+                    <div>
+                        <p class="font-semibold">ريان سيلرز</p>
+                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                    </div>
+                </div>
+            </article>
+            <article class="border-b border-gray-200 pb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                        class="w-full h-58 object-cover mb-3">
+                    <div
+                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                        أخبار بريطانيا
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                        ر.س
+                    </div>
+                    <div>
+                        <p class="font-semibold">ريان سيلرز</p>
+                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                    </div>
+                </div>
+            </article>
+            <article class="border-b border-gray-200 pb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop" alt=""
+                        class="w-full h-58 object-cover mb-3">
+                    <div
+                        class="absolute bottom-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                        أخبار بريطانيا
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                    اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
+                        ر.س
+                    </div>
+                    <div>
+                        <p class="font-semibold">ريان سيلرز</p>
+                        <p class="text-sm text-gray-500">28 أغسطس 2021</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- videos section 2 -->
+    <section class="container mx-auto px-4 py-8 space-y-6">
+        <header class="border-b-4 border-black pb-3 mb-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-5 aspect-square bg-primary-500"></div>
+                <h2 class="text-primary-500 font-bold text-3xl">أبرز الفيديوهات</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-primary-600 hover:text-primary-800 font-semibold text-lg transition-colors">
+                    عرض الكل <i class="fas fa-arrow-left "></i>
+                </a>
+            </div>
+        </header>
         <!-- Video Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 border-t">
             <!-- Grid Video 1 -->
@@ -2340,7 +2436,7 @@
             <!-- Footer Content Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- About US -->
-                <div class="col-span-2">
+                <div class="md:col-span-2">
                     <!-- Categories Header -->
 
                     <div class="text-2xl font-bold text-gray-900 flex items-center mb-2">
@@ -2349,7 +2445,7 @@
 
                     <h3 class="text-lg font-bold text-gray-400 mb-4">معلومات عنا</h3>
                     <p class="text-gray-100 mb-6 leading-relaxed">
-                        نحن نؤثر على 20 مليون مستخدم ونعد الشبكة الإخبارية الأولى للأعمال والتكنولوجيا على هذا الكوكب.
+                        من خلالنا يمكنك معرفة جميع الأخبار في العديد من المجالات في مكان واحد
                     </p>
                     <div class="flex gap-4">
                         <a href="#" class="text-gray-100 hover:text-primary-600 transition-colors">
@@ -2432,7 +2528,7 @@
                             <a href="#"
                                 class="text-gray-100 hover:text-primary-600 transition-colors flex items-center gap-2">
                                 أخبار المملكة المتحدة
-                                <span class="bg-primary-500 text-white text-xs px-2 py-0.5 ">ساخن</span>
+                                <span class="bg-primary-500 text-white text-xs px-2 py-0.5 ">جديد</span>
                             </a>
                         </li>
                         <li>
@@ -2444,25 +2540,6 @@
                     </ul>
                 </div>
 
-                <!-- Subscribe US -->
-                <!-- <div>
-                    <h3 class="text-lg font-bold text-gray-400 mb-4">اشترك معنا</h3>
-                    <p class="text-gray-100 mb-4 leading-relaxed">
-                        اشترك في نشرتنا الإخبارية للحصول على أحدث مقالاتنا على الفور!
-                    </p>
-                    <div class="space-y-3">
-                        <input type="email" placeholder="عنوان بريدك الإلكتروني"
-                            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent" />
-                        <button type="button"
-                            class="w-full bg-primary-600 text-white font-bold py-2 px-4 rounded hover:bg-primary-700 transition-colors"
-                            onclick="alert('تم الاشتراك بنجاح!')">
-                            اشترك الآن
-                        </button>
-                        <label class="flex items-start gap-2 text-sm text-gray-100 cursor-pointer">
-                            <input type="checkbox" class="mt-1" />
-                            <span>لقد قرأت ووافقت على الشروط والأحكام</span>
-                        </label>
-                    </div> -->
             </div>
         </div>
         </div>
