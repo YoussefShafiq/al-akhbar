@@ -4,10 +4,35 @@ body {
 
 /* swiper bullets style */
 .swiper-pagination-custom .swiper-pagination-bullet {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(48, 48, 48, 0.5);
     opacity: 1;
 }
 
 .swiper-pagination-custom .swiper-pagination-bullet-active {
-    background: rgba(255, 255, 255, 1);
+    background: rgb(0, 0, 0);
+}
+
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.container {
+    padding-inline: 70px !important;
 }
