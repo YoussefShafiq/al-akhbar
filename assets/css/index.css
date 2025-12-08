@@ -32,9 +32,3 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
 }
-
-@media (width>1024) {
-    .container {
-        padding-inline: 70px !important;
-    }
-}
