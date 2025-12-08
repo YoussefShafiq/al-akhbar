@@ -1,0 +1,13 @@
+body {
+    font-family: "Almarai", sans-serif;
+}
+
+/* swiper bullets style */
+.swiper-pagination-custom .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+    background: rgba(255, 255, 255, 1);
+}
