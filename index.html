@@ -88,26 +88,31 @@
 <body class="bg-gray-50 min-h-screen">
     <div class="h-32 bg-gray-50 flex justify-around items-center overflow-hidden">
         <div class="flex items-center gap-2">
-            <a href="www.facebook.com" class="text-black text-xl block">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="www.instagram.com" class="text-black text-xl block">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+
         </div>
-        <div class="text-primary-500 text-5xl font-extrabold h-full py-2">
-            <img src="./assets/images/logo.png" class="h-full" alt="">
+        <div class="text-primary-500 text-5xl font-extrabold h-full py-2 flex items-center gap-5">
+            <div class="flex flex-col justify-center text-center w-52">
+                <h3 class="lg:text-base text-sm text-black">
+                    رئيس مجلس الادارة
+                </h3>
+                <h2 class="lg:text-lg text-base font-bold text-black">
+                    إسلام عفيفي
+                </h2>
+            </div>
+            <div class="h-full">
+                <img src="./assets/images/logo.png" class="h-full" alt="">
+            </div>
+            <div class="flex flex-col justify-center text-center w-52">
+                <h3 class="lg:text-base text-sm text-black">
+                    رئيس التحرير
+                </h3>
+                <h2 class="lg:text-lg text-base font-bold text-black">
+                    د. أسامة السعيد
+                </h2>
+            </div>
         </div>
         <div class="flex items-center gap-2">
-            <a href="www.twitter.com" class="text-black text-xl block">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="www.youtube.com" class="text-black text-xl block">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-            <div class="w-[1px] h-6 bg-black/20"></div>
-            <a href="logout" class="text-black text-xl block">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+
         </div>
     </div>
     <!-- NAVBAR -->
@@ -147,9 +152,19 @@
                 </a>
             </div>
 
-            <div class="hidden md:flex items-center">
-                <input type="text" placeholder="بحث..."
-                    class="px-3 py-2 border border-gray-200 focus:border-primary-500 focus:ring focus:ring-primary-200/50 transition">
+            <div class="flex items-center gap-2">
+                <a href="www.facebook.com" class="text-black text-xl block">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="www.instagram.com" class="text-black text-xl block">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="www.twitter.com" class="text-black text-xl block">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="www.youtube.com" class="text-black text-xl block">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
             </div>
 
             <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-primary-600 focus:outline-none">
