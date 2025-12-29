@@ -1,5 +1,5 @@
 body {
-    font-family: "Almarai", sans-serif;
+    font-family: "Zain", sans-serif;
 }
 
 /* swiper bullets style */
@@ -31,4 +31,13 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+}
+
+.bg-main-600{
+    --tw-bg-opacity: 1;
+    @apply text-textmain-500
+}
+
+.text-textmain-500{
+    @apply hover:text-[#d2b89a];
 }

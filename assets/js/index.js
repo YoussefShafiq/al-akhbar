@@ -13,6 +13,16 @@ tailwind.config = {
                     700: '#c21818ff',
                     800: '#9f1919ff',
                     900: '#811b1bff',
+                },
+                main:{
+                    500:'#d2b89a',
+                    600:'rgb(210, 184, 154)',
+                },
+                textmain:{
+                    500:'#353535',
+                },
+                gray:{
+                    50:'#f1f1f1'
                 }
             },
             container: {
@@ -25,7 +35,7 @@ tailwind.config = {
                     xl: '1140px'
                 }
             }
-        }
+        },
     }
 }
 
