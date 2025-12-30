@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,11 +59,12 @@
                 max-width: 1340px !important;
             }
         }
+
         .bg-gray-50 {
             --tw-bg-opacity: 1;
             background-color: rgb(255, 255, 255);
         }
-        
+
         /* Animated Info Bar Styles (same as article page) */
         .info-bar {
             display: flex;
@@ -238,40 +240,41 @@
         .hover\:text-textmain-500:hover {
             color: #d2b89a;
         }
-        
+
         .hover\:bg-gray-100:hover {
             --tw-bg-opacity: 1;
             background-color: rgb(17, 17, 17);
         }
-        
+
         .space-x-reverse> :not([hidden])~ :not([hidden]) {
             --tw-space-x-reverse: 1;
             font-weight: 700;
             color: #252525;
         }
-        
+
         .border-black {
             --tw-border-opacity: 1;
             border-color: rgb(168, 168, 168);
         }
-        
+
         .text-primary-600 {
             color: #d52529;
         }
-        
+
         .bg-primary-600 {
             background-color: #d52529;
         }
-        
+
         .bg-main-600 {
             background-color: #d2b89a;
         }
-        
+
         .text-textmain-500 {
             color: #313131;
         }
     </style>
 </head>
+
 <body class="bg-gray-50 min-h-screen">
     <!-- TV News Style Animated Info Bar (same as article page) -->
     <div class="info-bar" dir="rtl">
@@ -321,7 +324,7 @@
                 <span class="chip">الإمارات<b>+4</b></span>
                 <span class="more-btn"><i class="fa fa-angle-left"></i></span>
             </div>
-            
+
             <!-- Duplicate content - Copy 2 -->
             <!-- 🕌 مواقيت الصلاة -->
             <div class="info-item prayers">
@@ -369,8 +372,9 @@
         </div>
     </div>
 
+    <!-- header -->
     <div class="container mx-auto">
-        <div class="h-32 bg-gray-50 flex justify-around items-center overflow-hidden">
+        <div class="lg:h-32 bg-gray-50 flex justify-around items-center overflow-hidden">
             <div class="flex items-center gap-2 hidden lg:block"
                 style="text-align: center;font-size: 12px;font-weight: 700;line-height: 2;">
                 السبت 8 رجب 1447 هـ
@@ -378,20 +382,21 @@
                 <br>
                 العدد 19856 – السنة 73
             </div>
-            <div class="text-textmain-500 text-5xl font-extrabold h-full py-2 flex items-center gap-5">
-                <div class="flex flex-col justify-center text-center w-52">
-                    <div class="text-sm" style="font-size: 0.8rem;font-weight: 500;color: #626262;">
+            <div class="text-textmain-500 text-5xl font-extrabold h-full py-2 flex flex-wrap lg:flex-nowrap items-center justify-center gap-5">
+                <div class="flex flex-col justify-center text-center w-1/3 lg:w-52 order-1">
+                    <div class="text-xs lg:text-[0.8rem] font-[500] text-[#626262]">
                         رئيس مجلس الادارة
                     </div>
                     <h2 class="lg:text-lg text-base font-bold text-black">
                         إسلام عفيفي
                     </h2>
                 </div>
-                <div class="h-full">
-                    <img src="./assets/images/logo.png" class="h-full" alt="">
+                <div class="h-full order-0 lg:order-2 w-full lg:w-fit flex justify-center items-center">
+                    <img src="./assets/images/logo.png" class="h-20 lg:h-32" alt="موقع الأخبار">
+                    <h1 hidden>الاخبار</h1>
                 </div>
-                <div class="flex flex-col justify-center text-center w-52">
-                    <div class="text-sm" style="font-size: 0.8rem;font-weight: 500;color: #626262;">
+                <div class="flex flex-col justify-center text-center w-1/3 lg:w-52 order-3">
+                    <div class="text-xs lg:text-[0.8rem] font-[500] text-[#626262]">
                         رئيس التحرير
                     </div>
                     <h2 class="lg:text-lg text-base font-bold text-black">
@@ -399,7 +404,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="flex items-center gap-2  hidden lg:block">
+            <div class="flex items-center gap-2 hidden lg:flex">
                 <a href="www.facebook.com" class="text-black text-xl block">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
@@ -424,7 +429,61 @@
                 <div class="h-8">
                 </div>
             </div>
-            <div class="hidden md:flex items-center space-x-reverse">
+            <div class="hidden lg:flex items-center space-x-reverse">
+                <a href="/"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    الرئيسية
+                </a>
+                <a href="/singleNew.html"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    مصر
+                </a>
+                <a href="#sports"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    أخبار الرياضة
+                </a>
+                <a href="#economy"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    الاقتصاد
+                </a>
+                <a href="#parliament"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    البرلمان
+                </a>
+                <a href="#middle-east"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    الشرق الأوسط
+                </a>
+                <a href="#culture"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    ثقافة وفنون
+                </a>
+                <a href="#opinion"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    مقالات الرأي
+                </a>
+                <a href="#videos"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    فيديو
+                </a>
+                <a href="#archive"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    أرشيف الجريدة
+                </a>
+                <a href="#contact"
+                    class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
+                    اتصل بنا
+                </a>
+            </div>
+            <div class="flex items-center gap-2">
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-gray-700 hover:text-textmain-500 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden lg:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-1">
                 <a href="#home"
                     class="nav-link px-4 py-2 text-gray-700 transition-all duration-200 hover:bg-black hover:!text-white">
                     الرئيسية
@@ -470,40 +529,9 @@
                     اتصل بنا
                 </a>
             </div>
-            <div class="flex items-center gap-2">
-            </div>
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-textmain-500 focus:outline-none">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white border-t border-gray-100">
-            <div class="px-6 py-4 space-y-1">
-                <a href="#home"
-                    class="mobile-nav-link block py-3 px-4 text-gray-700 hover:bg-black hover:!text-white">
-                    الرئيسية
-                </a>
-                <a href="#about"
-                    class="mobile-nav-link block py-3 px-4 text-gray-700 hover:bg-black hover:!text-white">
-                    من نحن
-                </a>
-                <a href="#services"
-                    class="mobile-nav-link block py-3 px-4 text-gray-700 hover:bg-black hover:!text-white">
-                    الخدمات
-                </a>
-                <a href="#portfolio"
-                    class="mobile-nav-link block py-3 px-4 text-gray-700 hover:bg-black hover:!text-white">
-                    أعمالنا
-                </a>
-                <a href="#contact"
-                    class="mobile-nav-link block py-3 px-4 text-gray-700 hover:bg-black hover:!text-white">
-                    تواصل معنا
-                </a>
-            </div>
         </div>
     </nav>
 
-    <!-- Rest of your homepage content remains the same -->
     <div class="flex">
         <div class="w-[90px] h-[600px] bg-primary-600 sticky top-14 hidden lg:block">
             <img src="./assets/images/verticalAd.jpg" class="h-full w-full object-cover" alt="">
@@ -515,7 +543,7 @@
                 <img src="https://www.autorepublic.ca/wp-content/uploads/2022/03/banner-4.jpg"
                     class="w-full h-full object-cover" alt="">
             </div>
-            <section class="container mx-auto px-0 py-8">
+            <section class="container mx-auto px-4 py-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-2">
                     <!-- Articles -->
                     <div class="lg:col-span-2">
@@ -525,18 +553,20 @@
                                     <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&h=250&fit=crop"
                                         alt="" class="w-full h-40 object-cover mb-3">
                                     <div
-                                        class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                        class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                         أخبار بريطانيا
                                     </div>
                                 </div>
-                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer"
+                                <div class="px-4 py-2">
+                                    <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer"
                                     style="font-size: 16px;">
                                     اعتقال اثنين من قادة الاحتجاجات المناهضة للإغلاق مع انطلاق مظاهرات عبر فالينور
                                 </h3>
-                                <p style="font-size: 14px;line-height: 1.7;text-align: justify;">قال وزير المالية، أحمد
+                                <p  style="font-size: 14px;line-height: 1.7;text-align: justify;">قال وزير المالية، أحمد
                                     كجوك، إن الحزمة الأولى للتسهيلات الضريبية أثبتت صحة مسار الثقة والشراكة فى تحفيز
                                     الامتثال الطوعى، وأن شركاءنا قدموا 612 ألف إقرار جديد ومعدل، وكشفوا طواعية عن نشاط
                                 </p>
+                                </div>
                             </article>
                         </div>
                     </div>
@@ -548,13 +578,13 @@
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
                             </div>
                             <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                                <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                                <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                     أخبار مصر
                                 </span>
-                                <h1 class="text-4xl font-bold mb-4 leading-tight">
+                                <h3 class="text-2xl lg:text-4xl font-bold mb-2 lg:mb-4 leading-tight">
                                     خطاب اليوم الوطني: التضحية والجهد مطلوبان للحفاظ على الانسجام
-                                </h1>
-                                <p class="text-gray-200 mb-4 text-lg">
+                                </h3>
+                                <p class="text-gray-200 mb-4 text-sm lg:text-lg">
                                     قال أحمد كجوك، إن الحزمة الأولى للتسهيلات الضريبية أثبتت صحة مسار الثقة والشراكة فى
                                     تحفيز الامتثال الطوعى
                                 </p>
@@ -579,7 +609,9 @@
                                 <div class="bottom-0 left-0 right-0 text-black">
                                     <div class="flex items-center mb-2 gap-3">
                                         <div style="width: 100%;">
-                                            <p class="font-semibold" style="background: #d2b89a;width: 100%;padding: 5px;text-align: center;margin-bottom: 10px;">بقلم رئيس التحرير</p>
+                                            <p class="font-semibold"
+                                                style="background: #d2b89a;width: 100%;padding: 5px;text-align: center;margin-bottom: 10px;">
+                                                بقلم رئيس التحرير</p>
                                             <p class="font-semibold">د. أسامة السعيد</p>
                                         </div>
                                     </div>
@@ -600,7 +632,8 @@
                         <div class="space-y-6">
                             <article class="border-b border-gray-200 pb-3" style="margin: 5px;">
                                 <div class="flex items-center gap-2 text-sm text-gray-600" style="text-align: center;">
-                                    <span class="text-textmain-500" style="width: 100%;color: #313131;"> اخبار مصر</span>
+                                    <span class="text-textmain-500" style="width: 100%;color: #313131;"> اخبار
+                                        مصر</span>
                                 </div>
                                 <h3 class="font-bold mb-2 hover:text-red-600 cursor-pointer"
                                     style="text-align: center;color: #313131;">
@@ -611,7 +644,8 @@
                             </article>
                             <article class="border-b border-gray-200 pb-3" style="margin: 5px;">
                                 <div class="flex items-center gap-2 text-sm text-gray-600" style="text-align: center;">
-                                    <span class="text-textmain-500" style="width: 100%;color: #313131;"> اخبار مصر</span>
+                                    <span class="text-textmain-500" style="width: 100%;color: #313131;"> اخبار
+                                        مصر</span>
                                 </div>
                                 <h3 class="font-bold mb-2 hover:text-red-600 cursor-pointer"
                                     style="text-align: center;color: #313131;">
@@ -622,7 +656,8 @@
                             </article>
                             <article class="border-b border-gray-200 pb-3" style="margin: 5px;">
                                 <div class="flex items-center gap-2 text-sm text-gray-600" style="text-align: center;">
-                                    <span class="text-textmain-500" style="width: 100%;color: #313131;"> اخبار مصر</span>
+                                    <span class="text-textmain-500" style="width: 100%;color: #313131;"> اخبار
+                                        مصر</span>
                                 </div>
                                 <h3 class="font-bold mb-2 hover:text-red-600 cursor-pointer"
                                     style="text-align: center;color: #313131;">
@@ -633,7 +668,8 @@
                             </article>
                             <article class="border-b border-gray-200 pb-3" style="margin: 5px;">
                                 <div class="flex items-center gap-2 text-sm text-gray-600" style="text-align: center;">
-                                    <span class="text-textmain-500" style="width: 100%;color: #313131;"> اخبار مصر</span>
+                                    <span class="text-textmain-500" style="width: 100%;color: #313131;"> اخبار
+                                        مصر</span>
                                 </div>
                                 <h3 class="font-bold mb-2 hover:text-red-600 cursor-pointer"
                                     style="text-align: center;color: #313131;">
@@ -659,7 +695,7 @@
                         <div class="relative">
                             <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=60"
                                 class="w-full h-50 object-cover mb-3">
-                            <div class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1">
+                            <div class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1">
                                 الرياضة
                             </div>
                         </div>
@@ -672,7 +708,7 @@
                         <div class="relative">
                             <img src="https://images.unsplash.com/photo-1523655223303-4e9ef5234587?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 class="w-full h-50 object-cover mb-3">
-                            <div class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1">
+                            <div class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1">
                                 تكنولوجيا
                             </div>
                         </div>
@@ -685,7 +721,7 @@
                         <div class="relative">
                             <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=60"
                                 class="w-full h-50 object-cover mb-3">
-                            <div class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1">
+                            <div class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1">
                                 منوعات
                             </div>
                         </div>
@@ -698,7 +734,7 @@
                         <div class="relative">
                             <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=60"
                                 class="w-full h-50 object-cover mb-3">
-                            <div class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1">
+                            <div class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1">
                                 الصحة
                             </div>
                         </div>
@@ -710,7 +746,7 @@
                         <div class="relative">
                             <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=400&h=250&fit=crop"
                                 class="w-full h-50 object-cover mb-3">
-                            <div class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1">
+                            <div class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1">
                                 الرياضة
                             </div>
                         </div>
@@ -721,7 +757,8 @@
                 </div>
             </section>
             <div class="hidden lg:flex m-auto w-[800px] h-[100px] bg-main-500 justify-center items-center">
-                <img src="https://www.autorepublic.ca/wp-content/uploads/2022/03/banner-4.jpg" class="w-full h-full object-cover" alt="">
+                <img src="https://www.autorepublic.ca/wp-content/uploads/2022/03/banner-4.jpg"
+                    class="w-full h-full object-cover" alt="">
             </div>
             <section class="container mx-auto px-4 py-8 space-y-6">
                 <header class="border-b border-black pb-3 mb-5 flex items-center justify-between">
@@ -730,8 +767,7 @@
                         <h2 class="text-textmain-500 font-bold text-3xl">آخر الأخبار</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        <a href="#"
-                            class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                        <a href="#" class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
                             عرض الكل <i class="fas fa-angle-left"></i>
                         </a>
                     </div>
@@ -740,24 +776,24 @@
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
                     <!-- MAIN BIG NEWS -->
                     <article
-                        class="lg:col-span-2 relative h-full group cursor-pointer overflow-hidden min-h-[500px] lg:h-[450px] lg:min-h-0">
+                        class="lg:col-span-2 relative h-full group cursor-pointer overflow-hidden !h-[500px] lg:h-[450px] lg:min-h-0">
                         <img src="https://images.unsplash.com/photo-1709536240391-fa5b06a756d3?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt=""
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px] lg:min-h-0">
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 lg:min-h-[600px] lg:min-h-0">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                            <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                            <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                 الشرق الأوسط
                             </span>
-                            <h1 class="text-4xl font-bold mb-4 leading-tight">
+                            <h3 class="text-4xl font-bold mb-4 leading-tight">
                                 ارتفاع أسعار النفط عالميًا بعد تقارير عن خفض الإنتاج في الخليج
-                            </h1>
+                            </h3>
                             <p class="text-gray-200 mb-4 text-lg">
                                 أسواق الطاقة تشهد حالة من التوتر بعد إعلان خفض الإنتاج، وسط توقعات بارتفاع إضافي في
                                 الأيام
                                 المقبلة.
                             </p>
-                     
+
                         </div>
                     </article>
                     <!-- SMALL NEWS 1 -->
@@ -766,14 +802,14 @@
                             <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-72 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 اقتصاد
                             </div>
                         </div>
                         <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
                             البورصة الأوروبية ترتفع بعد إعلان خطط تحفيز جديدة
                         </h3>
-             
+
                     </article>
                     <!-- SMALL NEWS 2 -->
                     <article class="pb-6">
@@ -781,7 +817,7 @@
                             <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-72 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 منوعات
                             </div>
                         </div>
@@ -794,7 +830,8 @@
                 <!-- BOTTOM GRID -->
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 border-t pt-6">
                     <article class="p-4 border-e">
-                        <span class="bg-main-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> سياسة </span>
+                        <span class="bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 mb-2 inline-block"> سياسة
+                        </span>
                         <h3 class="font-bold text-lg hover:text-red-600 cursor-pointer">
                             الحكومة تعلن تعديلات جديدة على قانون الانتخابات
                         </h3>
@@ -806,7 +843,7 @@
                         </div>
                     </article>
                     <article class="p-4 border-e">
-                        <span class="bg-main-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> اقتصاد
+                        <span class="bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 mb-2 inline-block"> اقتصاد
                         </span>
                         <h3 class="font-bold text-lg hover:text-red-600 cursor-pointer">
                             ارتفاع غير مسبوق في أسعار الذهب خلال التعاملات الصباحية
@@ -819,7 +856,7 @@
                         </div>
                     </article>
                     <article class="p-4">
-                        <span class="bg-main-600 text-white text-xs font-bold px-2 py-1 mb-2 inline-block"> علوم </span>
+                        <span class="bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 mb-2 inline-block"> علوم </span>
                         <h3 class="font-bold text-lg hover:text-red-600 cursor-pointer">
                             اكتشاف كوكب جديد قابل للحياة على بعد 40 سنة ضوئية
                         </h3>
@@ -840,8 +877,7 @@
                             <h2 class="text-textmain-500 font-bold text-3xl">آخر الأخبار</h2>
                         </div>
                         <div class="flex items-center gap-4">
-                            <a href="#"
-                                class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                            <a href="#" class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
                                 عرض الكل <i class="fas fa-angle-left "></i>
                             </a>
                         </div>
@@ -924,7 +960,7 @@
                                         <h3 class="text-white text-2xl font-bold mb-3">
                                             منتخب مصر يقترب من التأهل بعد فوز مثير
                                         </h3>
-                           
+
                                     </div>
                                 </div>
                             </div>
@@ -972,8 +1008,7 @@
                         <h2 class="text-textmain-500 font-bold text-3xl">آخر الأخبار</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        <a href="#"
-                            class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                        <a href="#" class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
                             عرض الكل <i class="fas fa-angle-left "></i>
                         </a>
                     </div>
@@ -984,20 +1019,20 @@
                         class="lg:col-span-2 relative h-full flex flex-col lg:flex-row gap-6 cursor-pointer overflow-hidden bg-white shadow">
                         <div class="lg:w-1/2 group overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                class="w-full h-[300px] lg:h-full object-cover transition-transform duration-300 group-hover:scale-105">
                         </div>
                         <div class="bottom-0 left-0 right-0 p-8 ps-0 text-black">
-                            <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                            <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                 أخبار الشرق الأوسط
                             </span>
-                            <h1 class="text-2xl font-bold mb-2 leading-tight">
+                            <h3 class="text-2xl font-bold mb-2 leading-tight">
                                 الحكومة تعلن خطة اقتصادية جديدة لمواجهة ارتفاع الأسعار
-                            </h1>
+                            </h3>
                             <p class="text-gray-600 mb-2 text-sm">
                                 كشفت مصادر رسمية أن الخطة تشمل إجراءات عاجلة لدعم السلع الأساسية
                                 وتحسين سوق العمل خلال الأشهر القادمة.
                             </p>
-                      
+
                         </div>
                     </article>
                     <!-- ================= BIG CARD #2 ================= -->
@@ -1005,20 +1040,20 @@
                         class="lg:col-span-2 relative h-full flex flex-col lg:flex-row gap-6 cursor-pointer overflow-hidden bg-white shadow">
                         <div class="lg:w-1/2 group overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1673296630925-a16a5592cc14?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                class="w-full h-[300px] lg:h-full object-cover transition-transform duration-300 group-hover:scale-105">
                         </div>
                         <div class="bottom-0 left-0 right-0 p-8 ps-0 text-black">
-                            <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                            <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                 أخبار العالم
                             </span>
-                            <h1 class="text-2xl font-bold mb-2 leading-tight">
+                            <h3 class="text-2xl font-bold mb-2 leading-tight">
                                 تحسن العلاقات بين دولتين بعد اتفاق دبلوماسي جديد
-                            </h1>
+                            </h3>
                             <p class="text-gray-600 mb-2 text-sm">
                                 الاتفاق الجديد يهدف إلى تعزيز التعاون التجاري والأمني بين البلدين
                                 وسط ترحيب دولي واسع.
                             </p>
-                  
+
                         </div>
                     </article>
                     <!-- ================= SMALL CARDS GRID ================= -->
@@ -1028,15 +1063,15 @@
                             class="relative h-full flex flex-col lg:flex-row gap-2 cursor-pointer overflow-hidden bg-white shadow">
                             <div class="lg:w-1/3 group overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1651340927948-26826aaef4b0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                    class="w-full h-[300px] lg:h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             </div>
                             <div class="lg:w-2/3 bottom-0 left-0 right-0 p-3 ps-0 text-black">
-                                <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                                <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                     اقتصاد
                                 </span>
-                                <h1 class="text-lg font-bold mb-2 leading-tight">
+                                <h3 class="text-lg font-bold mb-2 leading-tight">
                                     ارتفاع سعر الذهب عالميًا وسط مخاوف الأسواق
-                                </h1>
+                                </h3>
                             </div>
                         </article>
                         <!-- CARD 2 -->
@@ -1044,15 +1079,15 @@
                             class="relative h-full flex flex-col lg:flex-row gap-2 cursor-pointer overflow-hidden bg-white shadow">
                             <div class="lg:w-1/3 group overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1626478233437-3f093ad8ad68?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                    class="w-full h-[300px] lg:h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             </div>
                             <div class="lg:w-2/3 bottom-0 left-0 right-0 p-3 ps-0 text-black">
-                                <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                                <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                     تكنولوجيا
                                 </span>
-                                <h1 class="text-lg font-bold mb-2 leading-tight">
+                                <h3 class="text-lg font-bold mb-2 leading-tight">
                                     إطلاق هاتف جديد بتقنيات ذكاء اصطناعي متقدمة
-                                </h1>
+                                </h3>
                             </div>
                         </article>
                         <!-- CARD 3 -->
@@ -1060,15 +1095,15 @@
                             class="relative h-full flex flex-col lg:flex-row gap-2 cursor-pointer overflow-hidden bg-white shadow">
                             <div class="lg:w-1/3 group overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1513560113100-8fa7a20b6ee6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                    class="w-full h-[300px] lg:h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             </div>
                             <div class="lg:w-2/3 bottom-0 left-0 right-0 p-3 ps-0 text-black">
-                                <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                                <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                     صحة
                                 </span>
-                                <h1 class="text-lg font-bold mb-2 leading-tight">
+                                <h3 class="text-lg font-bold mb-2 leading-tight">
                                     دراسة: النوم المبكر يقلل خطر أمراض القلب بنسبة 25%
-                                </h1>
+                                </h3>
                             </div>
                         </article>
                         <!-- CARD 4 -->
@@ -1076,15 +1111,15 @@
                             class="relative h-full flex flex-col lg:flex-row gap-2 cursor-pointer overflow-hidden bg-white shadow">
                             <div class="lg:w-1/3 group overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1563299796-b729d0af54a5?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                    class="w-full h-[300px] lg:h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             </div>
                             <div class="lg:w-2/3 bottom-0 left-0 right-0 p-3 ps-0 text-black">
-                                <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                                <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                     رياضة
                                 </span>
-                                <h1 class="text-lg font-bold mb-2 leading-tight">
+                                <h3 class="text-lg font-bold mb-2 leading-tight">
                                     فوز فريق عربي في مباراة مثيرة بدوري الأبطال
-                                </h1>
+                                </h3>
                             </div>
                         </article>
                     </div>
@@ -1364,17 +1399,16 @@
                         <h2 class="text-textmain-500 font-bold text-3xl">أبرز الفيديوهات</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        <a href="#"
-                            class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                        <a href="#" class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
                             عرض الكل <i class="fas fa-angle-left "></i>
                         </a>
                     </div>
                 </header>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <!-- Featured Video -->
                     <div class="lg:col-span-2">
-                        <div class="relative group cursor-pointer overflow-hidden  shadow-xl">
-                            <div class="relative h-96 lg:h-[500px]">
+                        <div class="relative group cursor-pointer overflow-hidden h-full shadow-xl">
+                            <div class="relative h-96 lg:h-full">
                                 <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=800&h=500&fit=crop"
                                     alt="Featured video thumbnail"
                                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -1391,12 +1425,12 @@
                                 </div>
                                 <!-- Duration -->
                                 <div
-                                    class="absolute bottom-4 right-4 bg-black/80 text-white text-lg font-bold px-4 py-2">
+                                    class="absolute top-4 left-4 bg-black/80 text-white text-lg font-bold px-4 py-2">
                                     15:42
                                 </div>
                                 <!-- Live badge -->
                                 <div
-                                    class="absolute top-4 right-4 bg-main-600 text-white text-sm font-bold px-3 py-1 rounded-full flex items-center gap-2">
+                                    class="absolute top-4 right-4 bg-main-600 text-textmain-500 text-sm font-bold px-3 py-1 rounded-full flex items-center gap-2">
                                     <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                                     LIVE
                                 </div>
@@ -1406,9 +1440,9 @@
                                     <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 ">تكنولوجيا</span>
                                     <span class="bg-yellow-600 text-white text-xs font-bold px-3 py-1 ">حصري</span>
                                 </div>
-                                <h1 class="text-xl lg:text-3xl font-bold mb-4 leading-tight">
+                                <h3 class="text-xl lg:text-3xl font-bold mb-4 leading-tight">
                                     مستقبل الذكاء الاصطناعي: كيف سيغير حياتنا خلال الخمس سنوات القادمة؟
-                                </h1>
+                                </h3>
                                 <p class="text-gray-200 mb-4 text-sm lg:text-lg">
                                     مقابلة خاصة مع خبير الذكاء الاصطناعي د. محمد السعيد حول آخر التطورات والتوقعات
                                     المستقبلية
@@ -1439,9 +1473,9 @@
                         </div>
                     </div>
                     <!-- Video List Sidebar -->
-                    <div class="space-y-6">
+                    <div id="side-video-list" class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
                         <!-- Video 1 -->
-                        <div class="flex gap-4 group cursor-pointer">
+                        <div class="flex gap-4 group cursor-pointer border-b pb-2 border-b-black/20">
                             <div class="relative w-40 h-24 flex-shrink-0 overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&h=150&fit=crop"
                                     alt="Video thumbnail"
@@ -1457,13 +1491,14 @@
                                 </div>
                             </div>
                             <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="bg-primary-600 text-white text-xs font-bold px-2 py-0.5 ">رياضة</span>
+                                    <span class="text-xs text-gray-500">متابعة</span>
+                                </div>
                                 <h3
                                     class="font-bold text-lg mb-2 line-clamp-2 group-hover:text-textmain-500 transition-colors">
                                     أفضل تطبيقات العمل عن بعد لعام 2024
                                 </h3>
-                                <p class="text-gray-600 text-sm mb-2 line-clamp-2">
-                                    مراجعة شاملة لأفضل الأدوات والتطبيقات التي تسهل العمل عن بعد
-                                </p>
                                 <div class="flex items-center justify-between text-sm text-gray-500">
                                     <span class="flex items-center gap-1">
                                         <i class="far fa-eye"></i>
@@ -1474,7 +1509,7 @@
                             </div>
                         </div>
                         <!-- Video 2 -->
-                        <div class="flex gap-4 group cursor-pointer">
+                        <div class="flex gap-4 group cursor-pointer border-b pb-2 border-b-black/20">
                             <div class="relative w-40 h-24 flex-shrink-0 overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=150&fit=crop"
                                     alt="Video thumbnail"
@@ -1508,7 +1543,7 @@
                             </div>
                         </div>
                         <!-- Video 3 -->
-                        <div class="flex gap-4 group cursor-pointer">
+                        <div class="flex gap-4 group cursor-pointer border-b pb-2 border-b-black/20">
                             <div class="relative w-40 h-24 flex-shrink-0 overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=150&fit=crop"
                                     alt="Video thumbnail"
@@ -1525,7 +1560,7 @@
                             </div>
                             <div class="flex-1">
                                 <div class="flex items-center gap-2 mb-2">
-                                    <span class="bg-main-600 text-white text-xs font-bold px-2 py-0.5 ">أخبار</span>
+                                    <span class="bg-main-600 text-textmain-500 text-xs font-bold px-2 py-0.5 ">أخبار</span>
                                     <span class="text-xs text-red-600 font-bold">عاجل</span>
                                 </div>
                                 <h3
@@ -1542,7 +1577,7 @@
                             </div>
                         </div>
                         <!-- Video 4 -->
-                        <div class="flex gap-4 group cursor-pointer">
+                        <div class="flex gap-4 group cursor-pointer border-b pb-2 border-b-black/20">
                             <div class="relative w-40 h-24 flex-shrink-0 overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=150&fit=crop"
                                     alt="Video thumbnail"
@@ -1565,9 +1600,6 @@
                                     class="font-bold text-lg mb-2 line-clamp-2 group-hover:text-textmain-500 transition-colors">
                                     دورة تعليم البرمجة للمبتدئين - الجزء الأول
                                 </h3>
-                                <p class="text-gray-600 text-sm mb-2 line-clamp-2">
-                                    بداية رحلتك في عالم البرمجة مع شرح مبسط للمفاهيم الأساسية
-                                </p>
                                 <div class="flex items-center justify-between text-sm text-gray-500">
                                     <span class="flex items-center gap-1">
                                         <i class="far fa-eye"></i>
@@ -1587,8 +1619,7 @@
                         <h2 class="text-textmain-500 font-bold text-3xl">آخر الأخبار</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        <a href="#"
-                            class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                        <a href="#" class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
                             عرض الكل <i class="fas fa-angle-left "></i>
                         </a>
                     </div>
@@ -1596,9 +1627,9 @@
                 <div class="flex flex-col lg:flex-row gap-6">
                     <!-- LEFT TEXT BLOCK -->
                     <div class="lg:w-1/4 bg-gray-200 p-6">
-                        <h1 class="text-3xl lg:text-4xl lg:leading-[50px] font-bold">
+                        <h3 class="text-2xl lg:text-3xl lg:leading-[50px] font-bold">
                             اكتشف أهم العناوين والأحداث الجارية حول العالم فور حدوثها.
-                        </h1>
+                        </h3>
                         <p class="lg:text-lg mt-3 text-black/80">
                             تغطية شاملة لأبرز الأحداث السياسية والاقتصادية والاجتماعية.
                         </p>
@@ -1621,12 +1652,12 @@
                                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                             </div>
                             <div class="bottom-0 left-0 right-0 p-8 text-black">
-                                <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                                <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                     أخبار العالم
                                 </span>
-                                <h1 class="text-4xl font-bold mb-4 leading-tight">
+                                <h3 class="text-2xl lg:text-3xl font-bold mb-4 leading-tight">
                                     ارتفاع التوترات الدولية بعد إعلان قرارات اقتصادية جديدة مفاجئة
-                                </h1>
+                                </h3>
                                 <p class="text-gray-600 mb-4 text-lg">
                                     أفادت مصادر رسمية أن تغييرات اقتصادية كبرى أثّرت بشكل مباشر
                                     على الأسواق العالمية وأثارت حالة من الجدل بين خبراء الاقتصاد.
@@ -1655,7 +1686,7 @@
                                         اقتصاد
                                     </div>
                                 </div>
-                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                                     تراجع مفاجئ في أسعار النفط رغم ارتفاع الطلب العالمي
                                 </h3>
                                 <div class="flex items-center gap-3">
@@ -1679,7 +1710,7 @@
                                         صحة
                                     </div>
                                 </div>
-                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                                     منظمة الصحة تحذر من موجة جديدة من الفيروسات الموسمية
                                 </h3>
                                 <div class="flex items-center gap-3">
@@ -1703,7 +1734,7 @@
                                         رياضة
                                     </div>
                                 </div>
-                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                                     منتخب وطني يحقق فوزًا تاريخيًا ويتأهل للنهائيات لأول مرة
                                 </h3>
                                 <div class="flex items-center gap-3">
@@ -1727,7 +1758,7 @@
                                         تقنية
                                     </div>
                                 </div>
-                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                                <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                                     إطلاق تقنية جديدة تحدث ثورة في عالم الذكاء الاصطناعي
                                 </h3>
                                 <div class="flex items-center gap-3">
@@ -1752,27 +1783,26 @@
                         <h2 class="text-textmain-500 font-bold text-3xl">آخر الأخبار</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        <a href="#"
-                            class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                        <a href="#" class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
                             عرض الكل <i class="fas fa-angle-left "></i>
                         </a>
                     </div>
                 </header>
-                <div class="flex flex-col lg:flex-row gap-6">
+                <div class="flex flex-col lg:flex-row gap-6 lg:h-[500px]">
                     <!-- CARD 1 -->
                     <article
-                        class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
+                        class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden !h-[500px] lg:min-h-[500px]">
                         <img src="https://images.unsplash.com/photo-1708273029343-1805b6a7839c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt=""
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 lg:min-h-[600px]">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
                             <span class="bg-primary-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
                                 الاقتصاد العالمي
                             </span>
-                            <h1 class="text-2xl font-bold mb-4 leading-tight">
+                            <h3 class="text-2xl font-bold mb-4 leading-tight">
                                 توقعات بارتفاع أسعار الطاقة خلال الربع الأول من 2025
-                            </h1>
+                            </h3>
                             <p class="text-gray-200 mb-4 text-base">
                                 تشير تقارير الأسواق العالمية إلى احتمالية زيادة في أسعار النفط
                                 والغاز نتيجة انخفاض المعروض وارتفاع الطلب الموسمي.
@@ -1791,7 +1821,7 @@
                     </article>
                     <!-- CARD 2 -->
                     <article
-                        class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
+                        class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden !h-[500px] lg:min-h-[500px]">
                         <img src="https://images.unsplash.com/photo-1512439408685-2e399291a4e6?q=80&w=1095&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt=""
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
@@ -1800,9 +1830,9 @@
                             <span class="bg-primary-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
                                 تكنولوجيا
                             </span>
-                            <h1 class="text-2xl font-bold mb-4 leading-tight">
+                            <h3 class="text-2xl font-bold mb-4 leading-tight">
                                 الكشف عن هاتف جديد ببطارية تدوم لسبعة أيام
-                            </h1>
+                            </h3>
                             <p class="text-gray-200 mb-4 text-base">
                                 شركة ناشئة تعلن عن تقنية بطارية ثورية قد تغيّر شكل سوق الهواتف الذكية
                                 خلال السنوات القادمة.
@@ -1821,18 +1851,18 @@
                     </article>
                     <!-- CARD 3 -->
                     <article
-                        class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden min-h-[500px]">
+                        class="lg:w-1/3 lg:hover:w-1/2 transition-all duration-500 relative h-full group cursor-pointer overflow-hidden !h-[500px] lg:min-h-[500px]">
                         <img src="https://plus.unsplash.com/premium_photo-1705598688384-6a7fd705f88a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt=""
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 min-h-[600px]">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                            <span class="bg-main-600 text-white text-xs font-bold px-3 py-1 mb-4 inline-block">
+                            <span class="bg-main-600 text-textmain-500 text-xs font-bold px-3 py-1 mb-4 inline-block">
                                 أخبار العالم
                             </span>
-                            <h1 class="text-2xl font-bold mb-4 leading-tight">
+                            <h3 class="text-2xl font-bold mb-4 leading-tight">
                                 عاصفة قوية تضرب أجزاءً من أوروبا وتعطل حركة الطيران
-                            </h1>
+                            </h3>
                             <p class="text-gray-200 mb-4 text-base">
                                 أعلنت عدة مطارات إيقاف الرحلات الجوية بعد رياح شديدة وأمطار غزيرة
                                 أدت إلى تأخير آلاف المسافرين.
@@ -1858,8 +1888,7 @@
                         <h2 class="text-textmain-500 font-bold text-3xl">آخر الأخبار</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        <a href="#"
-                            class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                        <a href="#" class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
                             عرض الكل <i class="fas fa-angle-left "></i>
                         </a>
                     </div>
@@ -1870,11 +1899,11 @@
                             <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-58 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 أخبار عالمية
                             </div>
                         </div>
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                             الأمم المتحدة تحذر من تدهور الأوضاع الإنسانية في عدة مناطق حول العالم
                         </h3>
                         <div class="flex items-center gap-3">
@@ -1883,7 +1912,7 @@
                                 م.ع
                             </div>
                             <div>
-                                <p class="font-semibold">محمد علي</p>
+                                <p class="font-semibold text-sm ">محمد علي</p>
                                 <p class="text-sm text-gray-500">5 ديسمبر 2024</p>
                             </div>
                         </div>
@@ -1893,11 +1922,11 @@
                             <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-58 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 اقتصاد
                             </div>
                         </div>
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                             ارتفاع أسعار النفط عالميًا بعد توقعات بخفض الإنتاج خلال الربع القادم
                         </h3>
                         <div class="flex items-center gap-3">
@@ -1906,7 +1935,7 @@
                                 س.ح
                             </div>
                             <div>
-                                <p class="font-semibold">سارة حسن</p>
+                                <p class="font-semibold  text-sm">سارة حسن</p>
                                 <p class="text-sm text-gray-500">4 ديسمبر 2024</p>
                             </div>
                         </div>
@@ -1916,11 +1945,11 @@
                             <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-58 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 تكنولوجيا
                             </div>
                         </div>
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                             شركة تقنية كبرى تكشف عن نظام جديد يعتمد على الذكاء الاصطناعي لتحسين الأمن السيبراني
                         </h3>
                         <div class="flex items-center gap-3">
@@ -1929,7 +1958,7 @@
                                 ر.ج
                             </div>
                             <div>
-                                <p class="font-semibold">رامي جمال</p>
+                                <p class="font-semibold  text-sm">رامي جمال</p>
                                 <p class="text-sm text-gray-500">3 ديسمبر 2024</p>
                             </div>
                         </div>
@@ -1939,11 +1968,11 @@
                             <img src="https://images.unsplash.com/photo-1577942948749-a3dbb5c6db0a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="" class="w-full h-58 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 سياسة
                             </div>
                         </div>
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                             اجتماع طارئ لوزارة الخارجية لبحث آخر التطورات الإقليمية
                         </h3>
                         <div class="flex items-center gap-3">
@@ -1952,7 +1981,7 @@
                                 أ.م
                             </div>
                             <div>
-                                <p class="font-semibold">أحمد منصور</p>
+                                <p class="font-semibold  text-sm">أحمد منصور</p>
                                 <p class="text-sm text-gray-500">2 ديسمبر 2024</p>
                             </div>
                         </div>
@@ -1962,11 +1991,11 @@
                             <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-58 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 صحة
                             </div>
                         </div>
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                             منظمة الصحة العالمية تؤكد تسجيل تحسن ملحوظ في مؤشرات الصحة العامة
                         </h3>
                         <div class="flex items-center gap-3">
@@ -1975,7 +2004,7 @@
                                 ل.س
                             </div>
                             <div>
-                                <p class="font-semibold">لينا سليمان</p>
+                                <p class="font-semibold  text-sm">لينا سليمان</p>
                                 <p class="text-sm text-gray-500">1 ديسمبر 2024</p>
                             </div>
                         </div>
@@ -1985,11 +2014,11 @@
                             <img src="https://images.unsplash.com/photo-1444653389962-8149286c578a?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-58 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 رياضة
                             </div>
                         </div>
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                             فريق دولي يحقق فوزًا مهمًا في بطولة كأس العالم لكرة القدم
                         </h3>
                         <div class="flex items-center gap-3">
@@ -1998,7 +2027,7 @@
                                 ك.م
                             </div>
                             <div>
-                                <p class="font-semibold">كريم مراد</p>
+                                <p class="font-semibold  text-sm">كريم مراد</p>
                                 <p class="text-sm text-gray-500">30 نوفمبر 2024</p>
                             </div>
                         </div>
@@ -2008,11 +2037,11 @@
                             <img src="https://images.unsplash.com/photo-1488229297570-58520851e868?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-58 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 فن وثقافة
                             </div>
                         </div>
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                             إطلاق مهرجان دولي جديد يحتفي بالسينما المستقلة في الشرق الأوسط
                         </h3>
                         <div class="flex items-center gap-3">
@@ -2021,7 +2050,7 @@
                                 ج.ف
                             </div>
                             <div>
-                                <p class="font-semibold">جود فتحي</p>
+                                <p class="font-semibold  text-sm">جود فتحي</p>
                                 <p class="text-sm text-gray-500">29 نوفمبر 2024</p>
                             </div>
                         </div>
@@ -2031,11 +2060,11 @@
                             <img src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=400&h=250&fit=crop"
                                 alt="" class="w-full h-58 object-cover mb-3">
                             <div
-                                class="absolute bottom-0 right-0 bg-main-600 text-white text-xs font-bold px-2 py-1 inline-block">
+                                class="absolute bottom-0 right-0 bg-main-600 text-textmain-500 text-xs font-bold px-2 py-1 inline-block">
                                 علوم
                             </div>
                         </div>
-                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer">
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 cursor-pointer line-clamp-2">
                             اكتشاف علمي جديد قد يساعد في تطوير علاجات لأمراض نادرة
                         </h3>
                         <div class="flex items-center gap-3">
@@ -2044,7 +2073,7 @@
                                 ن.ر
                             </div>
                             <div>
-                                <p class="font-semibold">ندى ربيع</p>
+                                <p class="font-semibold  text-sm">ندى ربيع</p>
                                 <p class="text-sm text-gray-500">28 نوفمبر 2024</p>
                             </div>
                         </div>
@@ -2052,21 +2081,20 @@
                 </div>
             </section>
             <!-- videos section 2 -->
-            <section class="container mx-auto px-4 py-8 space-y-6">
+            <section class="container mx-auto px-4 py-8 pb-16 space-y-6">
                 <header class="border-b border-black pb-3 mb-5 flex items-center justify-between">
                     <div class="flex items-center gap-4">
                         <div class="w-5 aspect-square bg-main-500"></div>
                         <h2 class="text-textmain-500 font-bold text-3xl">أبرز الفيديوهات</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        <a href="#"
-                            class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                        <a href="#" class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
                             عرض الكل <i class="fas fa-angle-left "></i>
                         </a>
                     </div>
                 </header>
                 <!-- Video Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 border-t">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Grid Video 1 -->
                     <div class="group cursor-pointer">
                         <div class="relative overflow-hidden  mb-4">
@@ -2259,7 +2287,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2z"></path>
                             </svg>
                         </a>
                         <a href="#" class="text-gray-100 hover:text-textmain-500 transition-colors">
@@ -2327,7 +2355,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <!-- JavaScript for Info Bar Animation (same as article page) -->
     <script>
         // Mobile Menu Toggle
@@ -2411,8 +2439,9 @@
         // Demo: Update data every 30 seconds for testing
         // setInterval(updateInfoBarData, 30000);
     </script>
-    
+
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/slider.js"></script>
 </body>
+
 </html>

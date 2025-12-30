@@ -47,6 +47,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Zain:wght@300;400;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <style>
         @media (min-width: 1140px) {
@@ -62,7 +63,7 @@
 
         .hover\:text-textmain-500:hover {
             color: #d2b89a;
-        } 
+        }
 
         .space-x-reverse> :not([hidden])~ :not([hidden]) {
             --tw-space-x-reverse: 1;
@@ -358,7 +359,7 @@
                 <span class="chip">الإمارات<b>+4</b></span>
                 <span class="more-btn"><i class="fa fa-angle-left"></i></span>
             </div>
-            
+
             <!-- Duplicate content - Copy 2 -->
             <!-- 🕌 مواقيت الصلاة -->
             <div class="info-item prayers">
@@ -408,7 +409,7 @@
 
     <!-- Header (from homepage) -->
     <div class="container mx-auto">
-        <div class="h-32 bg-gray-50 flex justify-around items-center overflow-hidden">
+        <div class="lg:h-32 bg-gray-50 flex justify-around items-center overflow-hidden">
             <div class="flex items-center gap-2 hidden lg:block"
                 style="text-align: center;font-size: 12px;font-weight: 700;line-height: 2;">
                 السبت 8 رجب 1447 هـ
@@ -416,20 +417,21 @@
                 <br>
                 العدد 19856 – السنة 73
             </div>
-            <div class="text-textmain-500 text-5xl font-extrabold h-full py-2 flex items-center gap-5">
-                <div class="flex flex-col justify-center text-center w-52">
-                    <div class="text-sm" style="font-size: 0.8rem;font-weight: 500;color: #626262;">
+            <div
+                class="text-textmain-500 text-5xl font-extrabold h-full py-2 flex flex-wrap lg:flex-nowrap items-center justify-center gap-5">
+                <div class="flex flex-col justify-center text-center w-1/3 lg:w-52 order-1">
+                    <div class="text-xs lg:text-[0.8rem] font-[500] text-[#626262]">
                         رئيس مجلس الادارة
                     </div>
                     <h2 class="lg:text-lg text-base font-bold text-black">
                         إسلام عفيفي
                     </h2>
                 </div>
-                <div class="h-full">
-                    <img src="./assets/images/logo.png" class="h-full" alt="موقع الأخبار">
+                <div class="h-full order-0 lg:order-2 w-full lg:w-fit flex justify-center items-center">
+                    <img src="./assets/images/logo.png" class="h-20 lg:h-32" alt="موقع الأخبار">
                 </div>
-                <div class="flex flex-col justify-center text-center w-52">
-                    <div class="text-sm" style="font-size: 0.8rem;font-weight: 500;color: #626262;">
+                <div class="flex flex-col justify-center text-center w-1/3 lg:w-52 order-3">
+                    <div class="text-xs lg:text-[0.8rem] font-[500] text-[#626262]">
                         رئيس التحرير
                     </div>
                     <h2 class="lg:text-lg text-base font-bold text-black">
@@ -437,7 +439,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="flex items-center gap-2 hidden lg:block">
+            <div class="flex items-center gap-2 hidden lg:flex">
                 <a href="www.facebook.com" class="text-black text-xl block">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
@@ -510,7 +512,7 @@
             </div>
             <div class="flex items-center gap-2">
             </div>
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-textmain-500 focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
@@ -521,8 +523,7 @@
                     class="mobile-nav-link block py-3 px-4 text-gray-700 hover:bg-black hover:!text-white">
                     الرئيسية
                 </a>
-                <a href="#egypt"
-                    class="mobile-nav-link block py-3 px-4 text-gray-700 hover:bg-black hover:!text-white">
+                <a href="#egypt" class="mobile-nav-link block py-3 px-4 text-gray-700 hover:bg-black hover:!text-white">
                     مصر
                 </a>
                 <a href="#sports"
@@ -587,8 +588,6 @@
                     <a href="index.html" class="hover:text-primary-600 transition">الرئيسية</a>
                     <span class="text-gray-400">›</span>
                     <a href="#politics" class="hover:text-primary-600 transition">سياسة</a>
-                    <span class="text-gray-400">›</span>
-                    <span class="text-primary-600 font-semibold">الأزمة المالية في إلينوي</span>
                 </nav>
 
                 <!-- Article Grid -->
@@ -598,58 +597,26 @@
                         <!-- Article Header -->
                         <div class="mb-10">
                             <div class="flex items-center space-x-reverse space-x-2 text-sm text-gray-600 mb-6">
-                                <span class="font-medium bg-main-600 text-gray-900 px-4 py-2 rounded-lg">سياسة</span>
                                 <span class="text-gray-500"><i class="far fa-clock mr-1"></i> 6 ديسمبر 2025</span>
                                 <span class="text-gray-500"><i class="far fa-eye mr-1"></i> 125.4K مشاهدة</span>
                             </div>
 
-                            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 class="text-2xl md:text-4xl font-bold text-gray-900 mb-6 !leading-[1.4]">
                                 الأزمة المالية في ولاية إلينوي قد تؤدي لتوقف الولاية بالكامل
                             </h1>
 
-                            <p class="text-2xl text-gray-700 mb-8 leading-relaxed">
+                            <p class="text-xl text-gray-700 mb-8 leading-relaxed">
                                 تواجه ولاية إلينوي أزمة مالية خانقة تهدد بتعطيل الخدمات العامة وإيقاف حركة الولاية بشكل
                                 كامل خلال الفترة المقبلة.
                             </p>
 
-                            <div class="flex items-center justify-between border-b border-gray-200 pb-6">
-                                <div class="flex items-center space-x-reverse space-x-4">
-                                    <div
-                                        class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden border-2 border-gray-300">
-                                        <img src="./assets/images/gate_EXPO.png" class="w-full h-full object-cover"
-                                            alt="اليوم السابع">
-                                    </div>
-                                    <div>
-                                        <div class="text-gray-900 font-bold text-lg">اليوم السابع</div>
-                                        <div class="text-gray-500 text-sm">نشر منذ 4 ساعات</div>
-                                    </div>
-                                </div>
 
-                                <div class="flex space-x-reverse space-x-4">
-                                    <a
-                                        class="text-gray-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer text-xl">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a
-                                        class="text-gray-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer text-xl">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a
-                                        class="text-gray-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer text-xl">
-                                        <i class="fab fa-whatsapp"></i>
-                                    </a>
-                                    <a
-                                        class="text-gray-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer text-xl">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
 
                         <!-- Featured Image/Video -->
                         <div class="mb-10">
-                            <div class="relative rounded-xl overflow-hidden shadow-lg mb-4">
-                                <iframe src="https://www.youtube.com/embed/d1W5gK9sX6E?si=polHDF_5i2uOOzQ5"
+                            <div class="relative overflow-hidden shadow-lg mb-4">
+                                <iframe src="https://www.youtube.com/embed/2bDyMvoxjzM?si=4QDBDM9uCehrxxfu" 
                                     class="w-full h-[500px]" title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -661,6 +628,85 @@
                                 تكشف الأزمة المالية الحالية حجم المشكلات المتراكمة داخل الولاية.
                             </p>
                         </div>
+                        <div class="flex items-center justify-between border-b border-gray-200 pb-3 mb-3">
+                            <div class="flex items-center space-x-reverse space-x-4">
+                                <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+                                    <img src="./assets/images/gate_EXPO.png" class="w-full h-full object-cover"
+                                        alt="سارة فؤاد ">
+                                </div>
+                                <div>
+                                    <div class="text-gray-900 font-bold text-base">سارة فؤاد</div>
+                                    <div class="text-gray-500 text-sm">نشر منذ 4 ساعات</div>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-reverse space-x-4">
+                                <a
+                                    class="text-gray-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer text-xl">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a
+                                    class="text-gray-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer text-xl">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a
+                                    class="text-gray-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer text-xl">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a
+                                    class="text-gray-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer text-xl">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-2">
+                                        <h3 class="text-xl font-bold text-gray-900">ملخص الخبر</h3>
+                                    </div>
+                                    <button id="summary-toggle" onclick="toggleSummary()"
+                                        class="text-primary-600 hover:text-primary-800 transition-colors">
+                                        <i class="fas fa-chevron-down" id="summary-icon"></i>
+                                    </button>
+                                </div>
+                                <div id="summary-content" class="transition-all duration-300 overflow-hidden max-h-0">
+                                    <ul class="space-y-3 list-disc pr-6 text-gray-700">
+                                        <li class="pr-2">تواجه ولاية إلينوي أزمة مالية خطيرة تهدد بتوقف الخدمات العامة
+                                            الأساسية</li>
+                                        <li class="pr-2">الأزمة نتجت عن سنوات من الديون المتراكمة وسوء الإدارة المالية
+                                        </li>
+                                        <li class="pr-2">الولاية قد تضطر لخفض تمويل المدارس والمستشفيات وخدمات الطوارئ
+                                        </li>
+                                        <li class="pr-2">التصنيف الائتماني للولاية تأثر سلبًا مما يزيد من صعوبة الحل
+                                        </li>
+                                        <li class="pr-2">الخبراء يحذرون من أن الأزمة قد تستغرق سنوات للحل دون إجراءات
+                                            عاجلة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function toggleSummary() {
+                                const summaryContent = document.getElementById('summary-content');
+                                const summaryIcon = document.getElementById('summary-icon');
+
+                                if (summaryContent.classList.contains('max-h-0')) {
+                                    // Expand
+                                    summaryContent.classList.remove('max-h-0');
+                                    summaryContent.classList.add('max-h-96');
+                                    summaryIcon.classList.remove('fa-chevron-down');
+                                    summaryIcon.classList.add('fa-chevron-up');
+                                } else {
+                                    // Collapse
+                                    summaryContent.classList.remove('max-h-96');
+                                    summaryContent.classList.add('max-h-0');
+                                    summaryIcon.classList.remove('fa-chevron-up');
+                                    summaryIcon.classList.add('fa-chevron-down');
+                                }
+                            }
+                        </script>
 
                         <!-- Article Content -->
                         <div class="article-content">
@@ -763,6 +809,280 @@
                                     مالية</a>
                             </div>
                         </div>
+
+                        <!-- FAQs Accordion Section -->
+                        <div class="mt-16 bg-gray-50 rounded-xl p-6 border border-gray-200">
+                            <div class="flex items-center gap-2 mb-6">
+                                <h2 class="text-2xl font-bold text-gray-900">أسئلة متكررة </h2>
+                            </div>
+                            <div class="space-y-4">
+                                <!-- FAQ Item 1 -->
+                                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                                    <button
+                                        class="faq-question w-full text-right px-6 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                                        <span class="font-medium text-gray-900">ما هي أسباب الأزمة المالية في
+                                            إلينوي؟</span>
+                                        <i
+                                            class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="faq-answer px-6 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 pt-2 text-gray-700">
+                                            تعود الأزمة إلى تراكم الديون على مدار سنوات، وسوء إدارة الميزانية، وانخفاض
+                                            الإيرادات
+                                            الضريبية، بالإضافة إلى التزامات التقاعد غير الممولة. وتشير التقارير إلى أن
+                                            الديون
+                                            المتراكمة تصل إلى 130 مليار دولار.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 2 -->
+                                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                                    <button
+                                        class="faq-question w-full text-right px-6 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                                        <span class="font-medium text-gray-900">كيف ستتأثر الخدمات العامة؟</span>
+                                        <i
+                                            class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="faq-answer px-6 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 pt-2 text-gray-700">
+                                            قد تشمل التأثيرات: تقليص تمويل المدارس بنسبة تصل إلى 30%، إغلاق بعض
+                                            المستشفيات
+                                            العامة، تقليل خدمات الطوارئ، تأخير صرف رواتب الموظفين الحكوميين، وتقليص
+                                            خدمات
+                                            النقل العام. كما قد تتأثر خدمات الشرطة والإطفاء.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 3 -->
+                                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                                    <button
+                                        class="faq-question w-full text-right px-6 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                                        <span class="font-medium text-gray-900">هل هناك حلول مقترحة للأزمة؟</span>
+                                        <i
+                                            class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="faq-answer px-6 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 pt-2 text-gray-700">
+                                            نعم، تشمل الحلول المقترحة: زيادة الضرائب الانتقائية على الشركات الكبيرة،
+                                            إصلاح نظام التقاعد الحكومي، جذب الاستثمارات الخارجية، خفض النفقات غير
+                                            الضرورية
+                                            بنسبة 15%، وإعادة هيكلة الديون مع الدائنين. كما يقترح خبراء خطة إنقاذ طارئة.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 4 -->
+                                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                                    <button
+                                        class="faq-question w-full text-right px-6 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                                        <span class="font-medium text-gray-900">متى يمكن توقع تحسن الوضع؟</span>
+                                        <i
+                                            class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="faq-answer px-6 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 pt-2 text-gray-700">
+                                            حسب الخبراء، قد يستغرق الحل الكامل من 3 إلى 5 سنوات، ولكن يمكن رؤية تحسن
+                                            تدريجي خلال
+                                            السنة الأولى إذا تم تنفيذ الإصلاحات الضرورية بشكل سريع وفعال.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 5 -->
+                                <div class="faq-item bg-white rounded-lg border border-gray-200 overflow-hidden">
+                                    <button
+                                        class="faq-question w-full text-right px-6 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                                        <span class="font-medium text-gray-900">هل ستتأثر الولايات الأخرى بهذه
+                                            الأزمة؟</span>
+                                        <i
+                                            class="fas fa-chevron-down text-primary-600 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="faq-answer px-6 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 pt-2 text-gray-700">
+                                            هناك مخاوف من أن الأزمة قد تؤثر على الولايات المجاورة، خاصة في مجالات
+                                            التجارة
+                                            والاستثمار. كما قد تؤثر سلبًا على التصنيف الائتماني الإقليمي وتزيد من تكلفة
+                                            الاقتراض
+                                            للولايات الأخرى.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            // FAQ Accordion Functionality
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const faqItems = document.querySelectorAll('.faq-item');
+
+                                faqItems.forEach(item => {
+                                    const question = item.querySelector('.faq-question');
+                                    const answer = item.querySelector('.faq-answer');
+                                    const icon = question.querySelector('i');
+
+                                    // Set initial state
+                                    answer.style.maxHeight = '0';
+
+                                    question.addEventListener('click', function () {
+                                        // Close all other FAQs
+                                        faqItems.forEach(otherItem => {
+                                            if (otherItem !== item) {
+                                                const otherAnswer = otherItem.querySelector('.faq-answer');
+                                                const otherIcon = otherItem.querySelector('.faq-question i');
+                                                otherAnswer.style.maxHeight = '0';
+                                                otherIcon.style.transform = 'rotate(0deg)';
+                                            }
+                                        });
+
+                                        // Toggle current FAQ
+                                        if (answer.style.maxHeight === '0px' || answer.style.maxHeight === '') {
+                                            // Expand
+                                            answer.style.maxHeight = answer.scrollHeight + 'px';
+                                            icon.style.transform = 'rotate(180deg)';
+                                        } else {
+                                            // Collapse
+                                            answer.style.maxHeight = '0';
+                                            icon.style.transform = 'rotate(0deg)';
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
+
+                        <section class=" px-4 py-8 space-y-6 ">
+                            <div class="container mx-auto">
+                                <header class="border-b border-black pb-3 mb-5 flex items-center justify-between">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-3 h-8 bg-main-600"></div>
+                                        <h2 class="text-textmain-500 font-bold text-3xl">أخبار ذات صلة </h2>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <a href="#"
+                                            class="text-textmain-500 hover:text-primary-800 text-sm transition-colors">
+                                            عرض الكل <i class="fas fa-angle-left "></i>
+                                        </a>
+                                    </div>
+                                </header>
+                                <div class="swiper relatedNews pb-10">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide 1 -->
+                                        <div class="swiper-slide">
+                                            <div class="relative h-96 overflow-hidden group cursor-pointer">
+                                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+                                                    alt="News" class="w-full h-full object-cover">
+                                                <div
+                                                    class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent">
+                                                </div>
+                                                <div class="absolute top-4 left-4">
+                                                    <span
+                                                        class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">سياسة</span>
+                                                </div>
+                                                <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                    <h3 class="text-white text-2xl font-bold mb-3">
+                                                        الحكومة تعلن خطط تطوير جديدة للمدن الساحلية
+                                                    </h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 2 -->
+                                        <div class="swiper-slide">
+                                            <div class="relative h-96 overflow-hidden group cursor-pointer">
+                                                <img src="https://images.unsplash.com/photo-1624365168056-daf44387e2ae?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    class="w-full h-full object-cover">
+                                                <div
+                                                    class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent">
+                                                </div>
+                                                <div class="absolute top-4 left-4">
+                                                    <span
+                                                        class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">اقتصاد</span>
+                                                </div>
+                                                <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                    <h3 class="text-white text-2xl font-bold mb-3">
+                                                        ارتفاع أسعار الذهب عالمياً بعد تقلبات السوق
+                                                    </h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 3 -->
+                                        <div class="swiper-slide">
+                                            <div class="relative h-96 overflow-hidden group cursor-pointer">
+                                                <img src="https://images.unsplash.com/photo-1760655381156-7f9d62dbc275?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    alt="Technology" class="w-full h-full object-cover">
+                                                <div
+                                                    class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent">
+                                                </div>
+                                                <div class="absolute top-4 left-4">
+                                                    <span
+                                                        class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">تكنولوجيا</span>
+                                                </div>
+                                                <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                    <h3 class="text-white text-2xl font-bold mb-3">
+                                                        إطلاق هاتف جديد بقدرات تصوير ثورية
+                                                    </h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 4 -->
+                                        <div class="swiper-slide">
+                                            <div class="relative h-96 overflow-hidden group cursor-pointer">
+                                                <img src="https://images.unsplash.com/photo-1562493205-0c1659a3cf4c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    alt="Sports" class="w-full h-full object-cover">
+                                                <div
+                                                    class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent">
+                                                </div>
+                                                <div class="absolute top-4 left-4">
+                                                    <span
+                                                        class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">رياضة</span>
+                                                </div>
+                                                <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                    <h3 class="text-white text-2xl font-bold mb-3">
+                                                        منتخب مصر يقترب من التأهل بعد فوز مثير
+                                                    </h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 5 -->
+                                        <div class="swiper-slide">
+                                            <div class="relative h-96 overflow-hidden group cursor-pointer">
+                                                <img src="https://images.unsplash.com/photo-1668934804959-2cc138045bfb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    alt="Health" class="w-full h-full object-cover">
+                                                <div
+                                                    class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent">
+                                                </div>
+                                                <div class="absolute top-4 left-4">
+                                                    <span
+                                                        class="bg-primary-600 text-white text-xs font-semibold px-3 py-1">صحة</span>
+                                                </div>
+                                                <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                    <h3 class="text-white text-2xl font-bold mb-3">
+                                                        خبراء يحذرون من انتشار موجة جديدة من الإنفلونزا
+                                                    </h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Navigation and Pagination Container -->
+                                    <div class="flex items-center justify-center gap-6 mt-8">
+                                        <button
+                                            class="swiper-button-prev-custom text-black border-black border-2 w-8 aspect-square rounded-full backdrop-blur-sm flex items-center justify-center transition-colors after:content-none">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                        <div class="swiper-pagination-custom !w-fit"></div>
+                                        <button
+                                            class="swiper-button-next-custom text-black border-black border-2 w-8 aspect-square rounded-full backdrop-blur-sm flex items-center justify-center transition-colors after:content-none">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
 
                     <!-- Sidebar -->
@@ -772,6 +1092,7 @@
                             <div id="articleTrendingSticky"
                                 class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8 ">
                                 <div class="flex items-center gap-2 mb-6 pb-4 border-b border-gray-200">
+                                    <div class="w-3 h-8 bg-main-600"></div>
                                     <h3 class="text-xl font-bold text-gray-900">الأكثر تداولًا</h3>
                                 </div>
 
@@ -779,17 +1100,13 @@
                                     <!-- Item 1 -->
                                     <div class="pb-6 border-b border-gray-100">
                                         <div class="flex space-x-reverse space-x-3">
-                                            <div class="w-52 flex-shrink-0">
+                                            <div class="w-32 flex-shrink-0">
                                                 <img src="./assets/images/politics.jpg"
-                                                    class="h-40 w-full object-cover rounded-lg" alt="">
-                                                <span
-                                                    class="text-xs bg-primary-600 text-white px-2 py-1 absolute mt-2 mr-2 rounded">عاجل</span>
+                                                    class="min-h-32 h-full w-full object-cover" alt="">
+
                                             </div>
                                             <div>
-                                                <div class="flex items-center space-x-reverse space-x-2 mb-2">
-                                                    <img src="./assets/images/gate_EXPO.png"
-                                                        class="w-6 aspect-square rounded-full" alt="">
-                                                    <span class="text-xs text-gray-500">اليوم السابع</span>
+                                                <div class="text-xs bg-primary-600 text-white px-2 py-1 w-fit mb-3">عاجل
                                                 </div>
                                                 <h4
                                                     class="font-bold text-gray-900 hover:text-primary-600 cursor-pointer text-lg leading-tight">
@@ -806,16 +1123,13 @@
                                     <!-- Item 2 -->
                                     <div class="pb-6 border-b border-gray-100">
                                         <div class="flex space-x-reverse space-x-3">
-                                            <div class="w-52 flex-shrink-0">
-                                                <img src="./assets/images/economy.jpg"
-                                                    class="h-40 w-full object-cover rounded-lg" alt="">
+                                            <div class="w-32 flex-shrink-0">
+                                                <img src="https://images.unsplash.com/photo-1629540946404-ebe133e99f49?q=80&w=1103&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dp"
+                                                    class="min-h-32 h-full w-full object-cover " alt="">
                                             </div>
                                             <div>
-                                                <div class="flex items-center space-x-reverse space-x-2 mb-2">
-                                                    <img src="./assets/images/gate_EXPO.png"
-                                                        class="w-6 aspect-square rounded-full" alt="">
-                                                    <span class="text-xs text-gray-500">اليوم السابع</span>
-                                                </div>
+                                                <div class="text-xs bg-primary-600 text-white px-2 py-1 w-fit mb-3">
+                                                    اقتصاد</div>
                                                 <h4
                                                     class="font-bold text-gray-900 hover:text-primary-600 cursor-pointer text-lg leading-tight">
                                                     ارتفاع أسعار النفط عالمياً بعد توقعات بخفض الإنتاج
@@ -831,16 +1145,13 @@
                                     <!-- Item 3 -->
                                     <div class="pb-6 border-b border-gray-100">
                                         <div class="flex space-x-reverse space-x-3">
-                                            <div class="w-52 flex-shrink-0">
-                                                <img src="./assets/images/sports.jpg"
-                                                    class="h-40 w-full object-cover rounded-lg" alt="">
+                                            <div class="w-32 flex-shrink-0">
+                                                <img src="https://images.unsplash.com/photo-1562493205-0c1659a3cf4c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    class="min-h-32 h-full object-cover " alt="">
                                             </div>
                                             <div>
-                                                <div class="flex items-center space-x-reverse space-x-2 mb-2">
-                                                    <img src="./assets/images/gate_EXPO.png"
-                                                        class="w-6 aspect-square rounded-full" alt="">
-                                                    <span class="text-xs text-gray-500">اليوم السابع</span>
-                                                </div>
+                                                <div class="text-xs bg-primary-600 text-white px-2 py-1 w-fit mb-3">
+                                                    رياضة</div>
                                                 <h4
                                                     class="font-bold text-gray-900 hover:text-primary-600 cursor-pointer text-lg leading-tight">
                                                     منتخب مصر يحقق فوزًا تاريخيًا في البطولة الآسيوية
@@ -856,15 +1167,13 @@
                                     <!-- Item 4 -->
                                     <div class="pb-6">
                                         <div class="flex space-x-reverse space-x-3">
-                                            <div class="w-52 flex-shrink-0">
-                                                <img src="./assets/images/tech.jpg"
-                                                    class="h-40 w-full object-cover rounded-lg" alt="">
+                                            <div class="w-32 flex-shrink-0">
+                                                <img src="https://images.unsplash.com/photo-1760655381156-7f9d62dbc275?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    class="min-h-32 h-full w-full object-cover " alt="">
                                             </div>
                                             <div>
-                                                <div class="flex items-center space-x-reverse space-x-2 mb-2">
-                                                    <img src="./assets/images/gate_EXPO.png"
-                                                        class="w-6 aspect-square rounded-full" alt="">
-                                                    <span class="text-xs text-gray-500">اليوم السابع</span>
+                                                <div class="text-xs bg-primary-600 text-white px-2 py-1 w-fit mb-3">
+                                                    تكنولوجيا
                                                 </div>
                                                 <h4
                                                     class="font-bold text-gray-900 hover:text-primary-600 cursor-pointer text-lg leading-tight">
@@ -895,57 +1204,7 @@
                                 <p class="text-xs text-gray-500 mt-3">بالإشتراك، أنت توافق على شروط الخصوصية</p>
                             </div>
 
-                            <!-- Most Viewed -->
-                            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                                <div class="flex items-center gap-2 mb-6 pb-4 border-b border-gray-200">
-                                    <div class="w-3 h-8 bg-main-600"></div>
-                                    <h3 class="text-xl font-bold text-gray-900">الأكثر مشاهدة</h3>
-                                </div>
-                                <div class="space-y-4">
-                                    <!-- View Item 1 -->
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-16 h-16 flex-shrink-0">
-                                            <img src="./assets/images/politics.jpg"
-                                                class="w-full h-full object-cover rounded" alt="">
-                                        </div>
-                                        <div>
-                                            <h4
-                                                class="font-bold text-gray-900 hover:text-primary-600 cursor-pointer text-sm leading-tight">
-                                                الأزمة المالية في إلينوي
-                                            </h4>
-                                            <div class="text-xs text-gray-500 mt-1">125.4K مشاهدة</div>
-                                        </div>
-                                    </div>
-                                    <!-- View Item 2 -->
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-16 h-16 flex-shrink-0">
-                                            <img src="./assets/images/sports.jpg"
-                                                class="w-full h-full object-cover rounded" alt="">
-                                        </div>
-                                        <div>
-                                            <h4
-                                                class="font-bold text-gray-900 hover:text-primary-600 cursor-pointer text-sm leading-tight">
-                                                فوز المنتخب المصري
-                                            </h4>
-                                            <div class="text-xs text-gray-500 mt-1">98.7K مشاهدة</div>
-                                        </div>
-                                    </div>
-                                    <!-- View Item 3 -->
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-16 h-16 flex-shrink-0">
-                                            <img src="./assets/images/economy.jpg"
-                                                class="w-full h-full object-cover rounded" alt="">
-                                        </div>
-                                        <div>
-                                            <h4
-                                                class="font-bold text-gray-900 hover:text-primary-600 cursor-pointer text-sm leading-tight">
-                                                ارتفاع أسعار النفط
-                                            </h4>
-                                            <div class="text-xs text-gray-500 mt-1">87.2K مشاهدة</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1067,6 +1326,8 @@
         </div>
     </footer>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
 
     <!-- JavaScript -->
     <script>
@@ -1078,7 +1339,7 @@
 
         // Info Bar Animation Control
         const infoBarTicker = document.getElementById('infoBarTicker');
-        
+
         // Pause animation on hover
         infoBarTicker.addEventListener('mouseenter', () => {
             infoBarTicker.style.animationPlayState = 'paused';
@@ -1097,12 +1358,12 @@
                 const [hours, minutes] = time.split(':').map(Number);
                 let newMinutes = minutes + 1;
                 let newHours = hours;
-                
+
                 if (newMinutes >= 60) {
                     newMinutes = 0;
                     newHours = (newHours + 1) % 24;
                 }
-                
+
                 prayer.textContent = `${newHours.toString().padStart(2, '0')}:${newMinutes.toString().padStart(2, '0')}`;
             });
 
@@ -1127,19 +1388,19 @@
                     const text = element.textContent;
                     const buyMatch = text.match(/شراء (\d+\.\d+)/);
                     const sellMatch = text.match(/بيع (\d+\.\d+)/);
-                    
+
                     if (buyMatch && sellMatch) {
                         const buyRate = parseFloat(buyMatch[1]);
                         const sellRate = parseFloat(sellMatch[1]);
-                        
+
                         const buyChange = (Math.random() * 0.2) - 0.1; // -0.1 to 0.1
                         const sellChange = (Math.random() * 0.2) - 0.1;
-                        
+
                         const newBuyRate = Math.round((buyRate + buyChange) * 100) / 100;
                         const newSellRate = Math.round((sellRate + sellChange) * 100) / 100;
-                        
+
                         element.textContent = text.replace(/شراء \d+\.\d+/, `شراء ${newBuyRate.toFixed(2)}`)
-                                                .replace(/بيع \d+\.\d+/, `بيع ${newSellRate.toFixed(2)}`);
+                            .replace(/بيع \d+\.\d+/, `بيع ${newSellRate.toFixed(2)}`);
                     }
                 }
             });
