@@ -21,6 +21,7 @@ tailwind.config = {
                 textmain:{
                     500:'#353535',
                 },
+                textmain:'#353535',
                 gray:{
                     50:'#f1f1f1'
                 }
