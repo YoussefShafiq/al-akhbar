@@ -26,16 +26,16 @@ tailwind.config = {
                     50:'#f1f1f1'
                 }
             },
-            container: {
-                center: true,
-                padding: '1rem',
-                screens: {
-                    sm: '540px',
-                    md: '720px',
-                    lg: '960px',
-                    xl: '1140px'
-                }
-            }
+            // container: {
+            //     center: true,
+            //     padding: '1rem',
+            //     screens: {
+            //         sm: '540px',
+            //         md: '720px',
+            //         lg: '960px',
+            //         xl: '1140px'
+            //     }
+            // }
         },
     }
 }
